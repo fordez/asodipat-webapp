@@ -4,7 +4,7 @@
 	import Navheader from "./navheader.svelte";
 
 </script>
-<div class="flex flex-row bg-color-header ">
+<div class="flex flex-row bg-color-header p-3 ">
 	<div class="basis-1/4 container flex items-center justify-center ">
 		<Logo/>
 	</div>

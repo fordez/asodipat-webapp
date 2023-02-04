@@ -1,6 +1,6 @@
 
     <div class="flex justify-center ">
-      <a href="/" class="mr-6 text-2xl text-color-nav hover:text-color-primary transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-110 "><i class="fa-solid fa-earth-americas"></i> </a>
+      <a href="/" class="mr-6 text-2xl text-color-nav hover:text-color-primary transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-110 "><i class="fa-sharp fa-solid fa-house"></i> </a>
       <a href="/participar" class="mr-6 text-2xl text-color-nav hover:text-color-primary transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-110 "><i class="fa-solid fa-handshake"></i></a>
       <a href="/nosotros" class="mr-6 text-2xl text-color-nav hover:text-color-primary transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-110 "><i class="fa-sharp fa-solid fa-users"></i></a>
       <a href="/donaciones" class="mr-6 text-2xl text-color-nav hover:text-color-primary transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-110 "><i class="fa-sharp fa-solid fa-hand-holding-heart"></i></a>

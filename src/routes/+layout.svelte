@@ -4,14 +4,21 @@
 	import Footer from '../components/footer.svelte';
 	import Googlemaps from '../components/googlemaps.svelte';
 	import Header from '../components/header.svelte';
+	import Headermini from '../components/headermini.svelte';
 </script>
 
-<Header/>
+<div class="hidden lg:block">
+	<Header/>
+</div>
+
+<div class="sm:hidden">
+	<Headermini/>
+</div>
 
 <slot />
 
-<Googlemaps/>
+<Googlemaps />
 
-<Footer/>
+<Footer />
 
-<Copyright/>
+<Copyright />

@@ -1,10 +1,10 @@
 <div class=" relative py-12   " >
-	<div class="max-w-2xl py-4 text-start  text-white ml-7  bg-gradient-to-r from-color-title container mx-auto items-center ">
+	<div class="max-w-2xl py-4 text-start  text-white ml-7  bg-gradient-to-r from-color-title mx-auto items-center ">
 		<h1 class="ml-6 font-extrabold text-5xl ">
 			Construyendo <br/>un futuro pacífico
 		</h1>
 
-		<p class="mt-4 ml-6 max-w-xl  text-white">
+		<p class="mt-4 ml-6 max-w-xl text-lg text-white">
 			Fortalecemos a mujeres vitimas del conflicto armado en diferentes ámbitos de la vida:
 			educación, salud, economía y deporte.
 		</p>
