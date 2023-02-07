@@ -2,7 +2,6 @@
     <div class="w-full max-w-xl px-5 pt-5  pb-10 mx-auto  text-gray-800 bg-color-header rounded-lg shadow-lg dark:bg-gray-800 dark:text-gray-50">
         <div class="w-full pt-1 pb-5 mx-auto -mt-16 text-center">
             
-                <img alt="profil" src="/favicon.png" class=" mx-auto rounded-full h-30 w-30 "/>
             
         </div>
         <div class="w-full mb-10 text-color-nav ">
@@ -19,10 +18,10 @@
         </div>
         <div class="w-full">
             <p class="font-bold text-center text-indigo-500 text-md">
-                Tom Hardy
+            
             </p>
             <p class="text-xs text-center text-gray-500 dark:text-gray-300">
-                @thom.hardy
+                @asodipat
             </p>
         </div>
     </div>

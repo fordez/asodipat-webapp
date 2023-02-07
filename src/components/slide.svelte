@@ -1,5 +1,4 @@
 <script>
-	import Calltoaction from "./calltoaction.svelte";
 
 	let currentIndex = 0;
 	let slides = [ 'imagen5.jpg', '/actividad/emprender7.jpg', 'imagen2.jpg', 'actividad/cultura2.jpg','imagen3.jpg','actividad/deporte2.jpg' ];

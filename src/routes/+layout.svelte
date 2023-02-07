@@ -7,12 +7,12 @@
 	import Headermini from '../components/headermini.svelte';
 </script>
 
-<div class="hidden lg:block">
-	<Header/>
+<div class="hidden sm:block">
+	<Header />
 </div>
 
 <div class="sm:hidden">
-	<Headermini/>
+	<Headermini />
 </div>
 
 <slot />
