@@ -17,7 +17,12 @@ module.exports = {
       'color-title':'#04345a',
       'color-d1':'#4708ED',
       'color-d2':'#A808ED',
-      'color-d3':'#ED08A8'
+      'color-d3':'#ED08A8',
+      'color-naranjahover':'#FE7B00',
+      'color-naranja':'#FE9200',
+      'color-button':'#0073FE ',
+      'color-verde':'#00FF61',
+      'color-purpura':'#B900FF'
     },
     extend: {},
   },

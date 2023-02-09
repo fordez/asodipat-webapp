@@ -17,7 +17,9 @@
 			</h2>
 			<p class="text-2xl font-semibold md:text-3xl text-color-nav">Estamos en mantenimiento</p>
 			<p class="mt-4 text-xl mb-8 text-color-nav">Para Cualquier solicitud</p>
-			<a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=3206937812&text=Hola,%20deseo%20hablar%20con%20alg%C3%BAn%20representante" class="px-8 py-3 font-semibold rounded bg-color-primary text-white dark:text-gray-900">Contactar</a>
+			<a href="/contacto" class=" rounded border rounded-2xl px-10 py-3 text-sm bg-color-primary font-medium text-white hover:bg-color-nav focus:outline-none focus:ring active:text-opacity-75 sm:w-auto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 ">
+				Contactar
+			</a>
 		</div>
 	</div>
 </section>

@@ -4,7 +4,7 @@
 	import Socialheader from './socialheader.svelte';
 </script>
 
-<div class="flex flex-col bg-color-header ">
+<div class="flex flex-col bg-color-header " >
 	<div class="basis-1/2  flex items-center justify-center ">
 		<Logo />
 	</div>

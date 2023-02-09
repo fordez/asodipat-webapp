@@ -7,13 +7,15 @@
 	import Boxlogo from '../../components/boxlogo.svelte';
 	import Boxpaz from '../../components/boxpaz.svelte';
 	import Boxgestion from '../../components/boxgestion.svelte';
+	import Aboutbanner from '../../components/aboutbanner.svelte';
+	import Faq from '../../components/faq.svelte';
 </script>
 
-<Boxlogo />
+<Aboutbanner/>
 
 <About />
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3">
+<div class="grid sm:grid-cols-2 md:grid-cols-3 p-10">
 	<div class="text-center">
 		<Boxemprender/>
 	</div>
@@ -26,13 +28,14 @@
 		<Boxambiente />
 	</div>
 	<div class="bg-gray-200 text-center">
-		<Boxdeporte />
+		<Boxcultura />
 	</div>
 	<div class="bg-gray-200 text-center">
-		<Boxcultura />
+		<Boxdeporte />
 	</div>
 	<div class="bg-gray-200 text-center">
 		<Boxgestion />
 	</div>
 </div>
 
+<Faq/>
