@@ -1,23 +1,28 @@
+<script>
+	import Collagemision from "./collagemision.svelte";
+	import Collagevision from "./collagevision.svelte";
+
+</script>
 <section class="dark:bg-gray-800 dark:text-gray-100">
 	<div class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 		
 		<div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 			<div>
-				<h3 class="text-2xl font-bold tracking-tight sm:text-3xl text-color-footer">¿Cual es la VISION?</h3>
-				<p class="mt-3 text-lg text-color-nav">Para el año 2028 ASODIPAT se consolidará como una organización líder en la gestión y desarrollo de iniciativas orientadas en el mejoramiento de la calidad de vida de las poblaciones en condición de vulnerabilidad del pacífico sur colombiano.</p>
+				<h3 class="text-2xl font-bold tracking-tight sm:text-3xl text-color-footer">¿Cual es la MISION?</h3>
+				<p class="mt-3 text-lg text-color-nav">Propiciar el desarrollo integral, social y humano de las comunidades del pacifico sur de Colombia, gestionando condiciones favorables para la superación de las condiciones de vulnerabilidad, mediante la una gestión asociativa propositiva e integral.</p>
 			</div>
 			<div aria-hidden="true" class="mt-10 lg:mt-0">
-				<img src="https://source.unsplash.com/random/360x480" alt="" class="mx-auto rounded-lg shadow-lg dark:bg-gray-500">
+				<Collagemision/>
 			</div>
 		</div>
 		<div>
 			<div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 				<div class="lg:col-start-2">
-					<h3 class="text-2xl font-bold tracking-tight sm:text-3xl text-color-footer">¿Cual es la MISION?</h3>
-					<p class="mt-3 text-lg text-color-nav">Propiciar el desarrollo integral, social y humano de las comunidades del pacifico sur de Colombia, gestionando condiciones favorables para la superación de las condiciones de vulnerabilidad, mediante la una gestión asociativa propositiva e integral.</p>
+					<h3 class="text-2xl font-bold tracking-tight sm:text-3xl text-color-footer">¿Cual es la VISION?</h3>
+					<p class="mt-3 text-lg text-color-nav">Para el año 2028 ASODIPAT se consolidará como una organización líder en la gestión y desarrollo de iniciativas orientadas en el mejoramiento de la calidad de vida de las poblaciones en condición de vulnerabilidad del pacífico sur colombiano.</p>
 				</div>
 				<div class="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-					<img src="https://source.unsplash.com/random/361x481" alt="" class="mx-auto rounded-lg shadow-lg dark:bg-gray-500">
+					<Collagevision/>
 				</div>
 			</div>
 		</div>
