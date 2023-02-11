@@ -1,5 +1,6 @@
 <script>
-	import Collage from "../components/collage.svelte";
+	import Bannerhome from "../components/bannerhome.svelte";
+import Collage from "../components/collage.svelte";
 	import Ourallies from "../components/ourallies.svelte";
 	import Ouralliesmini from "../components/ouralliesmini.svelte";
 	import Sidebar from "../components/sidebar.svelte";
@@ -7,7 +8,7 @@
 
 </script>
 
-<Slide/>
+<Bannerhome/>
 
 <section class="flex items-center h-full p-16 dark:bg-gray-900 dark:text-gray-100">
 	<div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
