@@ -9,11 +9,17 @@
 	import Boxgestion from '../../components/boxgestion.svelte';
 	import Aboutbanner from '../../components/aboutbanner.svelte';
 	import Faq from '../../components/faq.svelte';
+	import Start from '../../components/start.svelte';
+	import Callactionabout from '../../components/callactionabout.svelte';
 </script>
 
 <Aboutbanner/>
 
 <About />
+
+<Start/>
+
+<Callactionabout/>
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 p-10">
 	<div class="text-center">

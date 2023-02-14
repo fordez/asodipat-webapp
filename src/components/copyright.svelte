@@ -1,5 +1,5 @@
 <div
-	class="font-light  text-color-second text-sm py-4 text-center items-center justify-center bg-color-footer"
+	class="font-light  text-color-second text-sm py-4 text-center items-center justify-center bg-color-title"
 >
 	Copyright © 2018 Free Software Foundation, GPL License, versión 3.0
 	<br />
