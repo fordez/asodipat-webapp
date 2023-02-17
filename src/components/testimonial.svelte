@@ -32,7 +32,7 @@
 
 
 
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-white">
     <div class="max-w-6xl px-6 py-10 mx-auto">
         <p class="text-xl font-medium text-color-nav ">Testimonio</p>
 

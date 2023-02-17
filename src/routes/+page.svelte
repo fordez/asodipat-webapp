@@ -1,12 +1,14 @@
 <script>
-	import Bannerhome from "../components/bannerhome.svelte";
+	import Banner from "../components/banner.svelte";
 	import Body from "../components/body.svelte";
 
 </script>
 
-<Bannerhome/>
+<Banner/>
 
 <Body/>
+
+
 
 
 

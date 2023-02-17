@@ -1,24 +1,36 @@
 <script>
-  import { onMount } from 'svelte';
+	import { db } from '../firebase';
+	import { getDocs, collection } from 'firebase/firestore';
+	import { onMount } from 'svelte';
+	import { writable, derived } from 'svelte/store';
 
-  let isExpanded = false;
+	export const experiencia = writable([]);
 
-  onMount(() => {
-    const paragraph = document.querySelector('.paragraph');
-    isExpanded = paragraph.offsetHeight < paragraph.scrollHeight;
-  });
+	onMount(async () => {
+		let data = [];
+		const querySnapshot = await getDocs(collection(db, 'experiencia'));
+		querySnapshot.forEach((doc) => {
+			data.push({ id: doc.id, ...doc.data() });
+		});
+		experiencia.set(data);
 
-  function toggleExpanded() {
-    isExpanded = !isExpanded;
-  }
+		const paragraph = document.querySelector('.paragraph');
+		isExpanded = paragraph.offsetHeight < paragraph.scrollHeight;
+	});
+
+	let isExpanded = false;
+
+	function toggleExpanded() {
+		isExpanded = !isExpanded;
+	}
 </script>
 
-<!-- Container for demo purpose lg:flex-row-reverse -->
-
-<!-- Section: Design Block -->
+{#each $experiencia as experiencia}
+	{experiencia.id}
 	<div class="flex flex-wrap mb-12 p-8">
+		<h1>{experiencia.id}</h1>
 		<h3 class="text-3xl font-bold tracking-tight  sm:text-4xl sm:hidden p-6 text-color-footer ">
-			Vereda San Juan
+			{experiencia.ubicacion}
 		</h3>
 		<div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
 			<div
@@ -27,11 +39,7 @@
 				data-mdb-ripple="true"
 				data-mdb-ripple-color="light"
 			>
-				<img
-					src="https://mdbootstrap.com/img/new/standard/city/028.jpg"
-					class="w-full"
-					alt="Louvre"
-				/>
+				<img src={experiencia.imagen} class="w-full" alt="Louvre" />
 				<a href="#!">
 					<div
 						class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
@@ -77,37 +85,43 @@
 		</div>
 
 		<div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
-			<h3 class="text-3xl font-bold mb-4 hidden sm:block text-color-footer">Vereda San Juan</h3>
+			<h3 class="text-3xl font-bold mb-4 hidden sm:block text-color-footer">
+				{experiencia.ubicacion}
+			</h3>
 
 			<div class="container max-w-4xl py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
 				<div class="flex items-center justify-between">
-					<span class="text-sm text-color-footer">Jun 1, 2020</span>
+					<span class="text-sm text-color-footer">{experiencia.fecha}</span>
 					<a
 						rel="noopener noreferrer"
 						href="#"
-						class="px-3 py-1 font-bold rounded-lg text-white bg-color-purpura">EMPREDIMIENTO</a
+						class="px-3 py-1 font-bold rounded-lg text-white bg-color-purpura">{experiencia.tipo}</a
 					>
 				</div>
 				<div class="mt-3">
 					<a
 						rel="noopener noreferrer"
 						href="#"
-						class="text-2xl font-bold hover:underlin text-color-footer"
-						>Nos creasse pendere crescit angelos etc</a
+						class="text-2xl font-bold hover:underlin text-color-footer">{experiencia.titulo}</a
 					>
-          
-          <p class="text-color-nav  overflow-hidden h-24 paragraph" class:line-clamp={!isExpanded}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed mauris mauris. Aenean faucibus risus non risus iaculis, non luctus libero convallis. Sed finibus aliquam turpis, et laoreet nulla venenatis ac. Nulla facilisi. Sed dictum nisl in quam porttitor, vel gravida est bibendum. Donec blandit, sapien vel bibendum volutpat, ex tellus malesuada lectus, quis scelerisque mauris nibh vel turpis. Praesent sit amet enim convallis, lacinia nisl vel, viverra felis. Sed ut eros non lorem vestibulum lobortis.
-          </p>
-          {#if isExpanded === false}
-            <button class="text-color-footer hover:underline focus:outline-none" on:click={toggleExpanded}>Leer más</button>
-          {:else}
-            <p class="text-color-nav leading-relaxed paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed mauris mauris. Aenean faucibus risus non risus iaculis, non luctus libero convallis. Sed finibus aliquam turpis, et laoreet nulla venenatis ac. Nulla facilisi. Sed dictum nisl in quam porttitor, vel gravida est bibendum. Donec blandit, sapien vel bibendum volutpat, ex tellus malesuada lectus, quis scelerisque mauris nibh vel turpis. Praesent sit amet enim convallis, lacinia nisl vel, viverra felis. Sed ut eros non lorem vestibulum lobortis.
-            </p>
-            <button class="text-color-footer hover:underline focus:outline-none" on:click={toggleExpanded}>Leer menos</button>
-          {/if}
-      
+
+					<p class="text-color-nav  overflow-hidden h-24 paragraph" class:line-clamp={!isExpanded}>
+						{experiencia.historia}
+					</p>
+					{#if isExpanded === false}
+						<button
+							class="text-color-footer hover:underline focus:outline-none"
+							on:click={toggleExpanded}>Leer más</button
+						>
+					{:else}
+						<p class="text-color-nav leading-relaxed paragraph">
+							{experiencia.historia}
+						</p>
+						<button
+							class="text-color-footer hover:underline focus:outline-none"
+							on:click={toggleExpanded}>Leer menos</button
+						>
+					{/if}
 				</div>
 				<div class="flex items-center justify-between mt-4">
 					<div>
@@ -124,3 +138,4 @@
 			</div>
 		</div>
 	</div>
+{/each}

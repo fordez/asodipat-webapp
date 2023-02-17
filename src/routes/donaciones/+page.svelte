@@ -1,6 +1,6 @@
 <script>
-	import Qr from '../../components/qr.svelte';
+	import Donationmethod from '../../components/donationmethod.svelte';
 </script>
 
 
-<Qr/>
+<Donationmethod/>
