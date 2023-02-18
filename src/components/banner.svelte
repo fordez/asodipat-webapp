@@ -1,11 +1,11 @@
 <script>
 	let currentIndex = 0;
 	let slides = [
-		'https://firebasestorage.googleapis.com/v0/b/asodipat.appspot.com/o/imagenes-web-asodipat%2Fbanner%2Fbanner4.jpg?alt=media&token=b30e561d-9e27-4872-9a2e-b78eeef5de4a',
-		'https://firebasestorage.googleapis.com/v0/b/asodipat.appspot.com/o/imagenes-web-asodipat%2Fbanner%2Fbanner5.jpg?alt=media&token=46f395a4-eaf6-436c-bd6a-fe7fcb5713d8',
-		'https://firebasestorage.googleapis.com/v0/b/asodipat.appspot.com/o/imagenes-web-asodipat%2Fbanner%2Fbanner2.jpg?alt=media&token=0212afe5-0005-42ce-9cbc-5e84237be7a0',
-		'https://firebasestorage.googleapis.com/v0/b/asodipat.appspot.com/o/imagenes-web-asodipat%2Fbanner%2Fbanner3.jpg?alt=media&token=1cea257a-d758-4ee6-b273-3a5b282ff6bf',
-		'https://firebasestorage.googleapis.com/v0/b/asodipat.appspot.com/o/imagenes-web-asodipat%2Fbanner%2Fbanner7.jpg?alt=media&token=fea8cf53-6b98-48aa-b3f4-d15a54008189'
+		'banner1.jpg',
+		'https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fbanner%2Fbanner2.jpg?alt=media&token=95721a5e-2bc6-48ee-a14f-e0ffdf0f7c08',
+		'https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fbanner%2Fbanner3.jpg?alt=media&token=86a2197b-919c-467f-89d2-2fb16dabd157',
+		'https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fbanner%2Fbanner4.jpg?alt=media&token=c56b9f83-9a89-40b2-8934-71d81e790833',
+		'https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fbanner%2Fbanner5.jpg?alt=media&token=a120b2c5-9e3c-4ab1-bb6a-0fda41472581'
 	];
 	let slogan = [
 		'Transformando comunidades del Pacífico Sur a través del empoderamiento emprendedor y la innovación sostenible.',
@@ -25,7 +25,7 @@
 
 	setInterval(() => {
 		handleNext();
-	}, 15000); // cambia automáticamente la imagen cada 5 segundos
+	}, 10000); // cambia automáticamente la imagen cada 5 segundos
 </script>
 
 <div class="bg-color-nav saturate-150">

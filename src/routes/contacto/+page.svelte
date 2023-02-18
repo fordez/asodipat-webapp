@@ -2,4 +2,4 @@
 	import Contacto from "../../components/contacto.svelte";
 
 </script>
-<Contacto/>
+<h1>contacto</h1>

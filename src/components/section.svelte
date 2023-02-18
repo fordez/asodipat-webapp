@@ -14,7 +14,6 @@
 </script>
 
 <!-- Container for demo purpose lg:flex-row-reverse -->
-
 <!-- Section: Design Block -->
 	<div class="flex flex-wrap mb-12 p-8">
 		<h3 class="text-3xl font-bold tracking-tight  sm:text-4xl sm:hidden p-6 text-color-footer ">

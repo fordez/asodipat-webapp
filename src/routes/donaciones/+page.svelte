@@ -1,6 +1,3 @@
-<script>
-	import Donationmethod from '../../components/donationmethod.svelte';
-</script>
 
-
-<Donationmethod/>
+  
+<h1>Donationes</h1>

@@ -1,5 +1,5 @@
 <script>
-	import Ouralliesmini from "./ouralliesmini.svelte";
+	import Ouralliesmini from "./logosourallies.svelte";
 
 </script>
 <section class="bg-color-header dark:text-gray-100">
