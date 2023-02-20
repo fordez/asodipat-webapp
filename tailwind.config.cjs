@@ -22,7 +22,8 @@ module.exports = {
       'color-naranja':'#FE9200',
       'color-button':'#0073FE ',
       'color-verde':'#00FF61',
-      'color-purpura':'#B900FF'
+      'color-purpura':'#B900FF',
+      'black':'#000000'
     },
     extend: {},
   },

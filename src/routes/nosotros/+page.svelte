@@ -1,9 +1,10 @@
 <script>
-	import About from "../../components/about.svelte";
 	import Aboutbanner from "../../components/aboutbanner.svelte";
 	import Callactionabout from "../../components/callactionabout.svelte";
 	import Lineaction from "../../components/lineaction.svelte";
+	import Mision from "../../components/mision.svelte";
 	import Title from "../../components/title.svelte";
+	import Vision from "../../components/vision.svelte";
 
 </script>
 
@@ -11,7 +12,9 @@
 
 <Title title='Conoce Más De Nosotros'/>
 
-<About/>
+<Mision/>
 
-<Lineaction/>
+<Vision/>
+
+<Callactionabout/>
 
