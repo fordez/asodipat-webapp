@@ -1,3 +1,7 @@
+<script>
+	import Modal from "../../components/modal.svelte";
+
+</script>
 
   
-<h1>Donationes</h1>
+<Modal/>

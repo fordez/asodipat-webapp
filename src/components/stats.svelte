@@ -1,5 +1,5 @@
 <section class="p-6 bg-color-primary text-white ">
-	<div class="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
+	<div class="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4 ">
 		<div class="flex p-4 space-x-4 rounded-lg md:space-x-6 bg-color-footer transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
 			<div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-color-naranja hover:bg-color-naranjahover">
 		
@@ -40,7 +40,7 @@
 			</div>
 			<div class="flex flex-col justify-center align-middle ">
 				<p class="text-3xl font-semibold leading-none">450</p>
-				<p class="capitalize">Experiencias</p>
+				<p class="capitalize">Experiencia</p>
 			</div>
 		</div>
 	</div>

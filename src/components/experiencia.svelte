@@ -18,7 +18,7 @@
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="flex justify-start items-end h-full">
-                <h5 class="text-lg font-bold text-white m-6">Medio Ambiente</h5>
+                <h5 class="text-lg font-bold text-color-header m-6">Medio Ambiente</h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -37,7 +37,7 @@
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="flex justify-start items-end h-full">
-                <h5 class="text-lg font-bold text-white m-6">Emprendimiento</h5>
+                <h5 class="text-lg font-bold text-color-header m-6">Emprendimiento</h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -56,7 +56,7 @@
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="flex justify-start items-end h-full">
-                <h5 class="text-lg font-bold text-white m-6">Convivencia y Paz</h5>
+                <h5 class="text-lg font-bold text-color-header m-6">Convivencia y Paz</h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -75,7 +75,7 @@
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="flex justify-start items-end h-full">
-                <h5 class="text-lg font-bold text-white m-6">Deporte</h5>
+                <h5 class="text-lg font-bold text-color-header m-6">Deporte</h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -94,7 +94,7 @@
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="flex justify-start items-end h-full">
-                <h5 class="text-lg font-bold text-white m-6">Cultura</h5>
+                <h5 class="text-lg font-bold text-color-header m-6">Cultura</h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -113,7 +113,7 @@
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="flex justify-start items-end h-full">
-                <h5 class="text-lg font-bold text-white m-6">Programas Sociales</h5>
+                <h5 class="text-lg font-bold text-color-header m-6">Programas Sociales</h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -124,9 +124,4 @@
           </a>
         </div>
       </div>
-  
-    </section>
-    <!-- Section: Design Block -->
-    
-
-  <!-- Container for demo purpose -->
+  </section>

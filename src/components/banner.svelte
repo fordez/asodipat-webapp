@@ -28,13 +28,12 @@
 	}, 10000); // cambia automáticamente la imagen cada 5 segundos
 </script>
 
-<div class="bg-color-nav saturate-150">
-    <img src={slides[currentIndex]} class="w-full h-full  object-cover absolute" />
-
+<div class="saturate-200  ">
+    <img src={slides[currentIndex]} class="w-full h-full  object-cover absolute  " />
 
 	<div class=" relative py-20  ">
 		<div
-			class="py-10 text-start max-w-3xl text-white ml-7  rounded-xl bg-gradient-to-r from-color-title mx-auto items-center "
+			class="py-10 text-start max-w-3xl text-white ml-7  rounded-2xl bg-gradient-to-r from-color-title mx-auto items-center "
 		>
 			<h1 class="ml-6 font-extrabold text-4xl">
 				CONSTRUYENDO<br />UN FUTURO PACIFICO

@@ -1,9 +1,8 @@
 <script>
     let currentIndex = 0;
-    let impactado = ['Diana Palacio','Chicas Roberto Payan', 'Cumunidad Vereda el Charco' ]
-    let action = ['Emprendedora','Recreación', 'Ayudas Sociales']
-    let testimonial = [
-        '“ La Asociación Asodipat ha sido un apoyo incondicional en mi camino como emprendedora. Les estoy eternamente agradecida por brindarme las herramientas y oportunidades para hacer realidad mis sueños empresariales.”',
+    let line = ['Medio Ambiente','Chicas Roberto Payan', 'Cumunidad Vereda el Charco' ]
+    let action = [
+        ' El medio ambiente es nuestra responsabilidad y debemos actuar ahora para preservarlo para futuras generaciones.',
         '“ Queremos agradecer a Asodipat por brindarnos la oportunidad de disfrutar de un espacio de recreación donde pudimos desconectar de la rutina y compartir momentos inolvidables con nuestras amigas.”',
         '“ En nombre de toda la comunidad, queremos agradecer a Asodipat por organizar este evento, que tuvo un impacto significativo donde pudimos recibir estas ayudas necesarios para hacer frente a la situación difícil actual.”'
     ]
@@ -14,11 +13,11 @@
     ]
 
     function handleNext() {
-		currentIndex = currentIndex === testimonial.length - 1 ? 0 : currentIndex + 1;
+		currentIndex = currentIndex === action.length - 1 ? 0 : currentIndex + 1;
 	}
 
 	function handlePrev() {
-		currentIndex = currentIndex === 0 ? testimonial.length - 1 : currentIndex - 1;
+		currentIndex = currentIndex === 0 ? action.length - 1 : currentIndex - 1;
 	}
 
 	setInterval(() => {
@@ -27,17 +26,12 @@
 
 </script>
 
-
-
-
-
-
 <section class="bg-white">
-    <div class="max-w-6xl px-6 py-10 mx-auto ">
-        <p class="text-xl font-medium text-color-nav ">Testimonio</p>
+    <div class="max-w-6xl px-6 py-10 mx-auto">
+        <p class="text-sm font-medium text-color-nav uppercase">Concentramos nuestro Trabajando en estas</p>
 
         <h1 class="mt-2 text-3xl font-semibold text-color-footer capitalize lg:text-4xl dark:text-white">
-            Lo que dicen de nosotros
+            lineas de acción
         </h1>
 
         <main class="relative z-20 w-full p-4 mt-8 md:flex md:items-center xl:mt-12">
@@ -48,11 +42,10 @@
                 
                 <div class="mt-2 md:mx-6">
                     <div>
-                        <p class="text-xl font-medium tracking-tight text-color-header ">{impactado[currentIndex]}</p>
-                        <p class="text-color-title ">{action[currentIndex]}</p>
+                        <p class="text-xl font-medium tracking-tight text-color-footer">{line[currentIndex]}</p>
                     </div>
 
-                    <p class="mt-4 text-lg leading-relaxed text-white md:text-xl">{testimonial[currentIndex]}</p>
+                    <p class="mt-4 text-lg leading-relaxed text-white md:text-xl">{action[currentIndex]}</p>
                     
                     <div class="flex items-center justify-between mt-6 md:justify-start">
                         <button title="left arrow" class="p-2 text-color-naranjahover transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-color-naranja hover:text-white"on:click={handlePrev}>

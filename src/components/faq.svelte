@@ -1,4 +1,4 @@
-<div class="space-y-4 max-w-4xl mx-auto p-8">
+<div class="space-y-4 max-w-5xl mx-auto p-8">
     <h1 class="text-3xl text-color-footer">Preguntas Frecuente</h1>
     <details
       class="group border-l-4 border-color-button p-6 [&_summary::-webkit-details-marker]:hidden"
