@@ -4,7 +4,7 @@
         <div class="shadow-2xl bg-color-header rounded-xl p-8 ml-auto lg:col-start-2-reverse lg:max-w-2xl transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
         
             <span class="text-xs uppercase text-color-second">Acompañanos en nuestro alcance</span>
-            <h3 class="text-3xl font-bold text-color-footer">¿Nuestra VISIÓN?</h3>
+            <h3 class="text-3xl font-bold text-color-footer">¿Nuestra <span class="text-color-primary">VISIÓN?</span> </h3>
             <p class="my-6 text-lg text-color-nav">
                 Para el año 2028 ASODIPAT se consolidará como una organización líder en la gestión y
                 desarrollo de iniciativas orientadas en el mejoramiento de la calidad de vida de las
@@ -41,7 +41,6 @@
                 De este modo para el año 20xx ante las necesidades crecientes y la dinámicas sociales existentes,
                 se efectúa una reestructuración organizativa dándole cavidad a un mayor campo de acción y gestión
                 de la asociativa.</p>
-        
     </div>
 </section>
 

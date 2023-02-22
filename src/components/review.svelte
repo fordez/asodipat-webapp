@@ -1,17 +1,17 @@
 <section class="py-6 bg-color-footer text-white">
 	<div class="container mx-auto flex flex-col justify-around p-4 text-center md:p-10 lg:flex-row">
 		<div class="flex flex-col justify-center lg:text-left">
-			<p class="mb-1 text-xs font-medium tracking-widest uppercase ">Tu feedback nos ayuda a retroalimentarnos</p>
-			<h1 class="py-2 text-4xl font-medium leading-tight title-font">¿Que opinas sobre nuestro trabajo social?</h1>
+			<p class="mb-1 text-xs font-medium tracking-widest uppercase text-color-primary ">Tu feedback nos ayuda a retroalimentarnos</p>
+			<h1 class="py-2 text-4xl font-medium leading-tight title-font">¿Qué opinas sobre nuestro trabajo social?</h1>
 		</div>
 		
 	</div>
 </section>
 
 
-<div class="flex flex-col max-w-xl mx-auto p-8 shadow-sm rounded-xl lg:p-12 dark:bg-gray-900 dark:text-gray-100">
+<div class="flex flex-col  mx-auto p-8 shadow-sm rounded-xl lg:p-12 bg-color-header">
 	<div class="flex flex-col items-center w-full">
-		<h2 class="text-3xl font-semibold text-center text-color-footer">¡Tu opinion importa!</h2>
+		<h2 class="text-4xl font-semibold text-center text-color-footer">¡Tu opinión importa!</h2>
 		<div class="flex flex-col items-center py-6 space-y-3 text-color-nav">
 			<div class="flex space-x-3">
 				<button type="button" title="Rate 1 stars" aria-label="Rate 1 stars">
@@ -42,8 +42,8 @@
 			</div>
 		</div>
 		<div class="flex flex-col w-full max-w-xs">
-			<textarea rows="3" placeholder="Mensaje..." class="p-4 rounded-md resize-none "></textarea>
-			<button type="button" class="py-4 my-8  font-semibold rounded-md bg-color-naranja hover:bg-color-naranjahover text-white transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110 ">Deja un comentario</button>
+			<textarea rows="3" placeholder="Mensaje..." class="p-4 rounded-md resize-none border border-color-nav "></textarea>
+			<button type="button" class="py-4 my-8  font-semibold rounded-md bg-color-naranja hover:bg-color-naranjahover text-white transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110 ">Opinar</button>
 		</div>
 	</div>
 </div>

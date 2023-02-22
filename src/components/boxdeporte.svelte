@@ -10,6 +10,5 @@
                Contribuyen a mejorar la salud física y mental humana.
             </p>
         </div>
-      
     </div>
 </div>

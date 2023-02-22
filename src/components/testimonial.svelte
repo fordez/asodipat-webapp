@@ -3,7 +3,7 @@
     let impactado = ['Diana Palacio','Chicas Roberto Payan', 'Cumunidad Vereda el Charco' ]
     let action = ['Emprendedora','Recreación', 'Ayudas Sociales']
     let testimonial = [
-        '“ La Asociación Asodipat ha sido un apoyo incondicional en mi camino como emprendedora. Les estoy eternamente agradecida por brindarme las herramientas y oportunidades para hacer realidad mis sueños empresariales.”',
+        '“ La Fundación Asodipat ha sido un apoyo incondicional en mi camino como emprendedora. Les estoy eternamente agradecida por brindarme las herramientas y oportunidades para hacer realidad mis sueños empresariales.”',
         '“ Queremos agradecer a Asodipat por brindarnos la oportunidad de disfrutar de un espacio de recreación donde pudimos desconectar de la rutina y compartir momentos inolvidables con nuestras amigas.”',
         '“ En nombre de toda la comunidad, queremos agradecer a Asodipat por organizar este evento, que tuvo un impacto significativo donde pudimos recibir estas ayudas necesarios para hacer frente a la situación difícil actual.”'
     ]
@@ -32,15 +32,15 @@
 
 
 
-<section class="bg-white">
-    <div class="max-w-6xl px-6 py-10 mx-auto ">
+
+    <div class=" px-10 pb-8 mx-auto">
         <p class="text-xl font-medium text-color-nav ">Testimonio</p>
 
         <h1 class="mt-2 text-3xl font-semibold text-color-footer capitalize lg:text-4xl dark:text-white">
-            Lo que dicen de nosotros
+            Lo que dicen de <span class="text-color-primary">Asodipat</span>
         </h1>
 
-        <main class="relative z-20 w-full p-4 mt-8 md:flex md:items-center xl:mt-12">
+        <main class="relative z-20 w-full p-4 mt-8 md:flex md:items-center ">
             <div class="absolute w-full bg-color-primary -z-10 md:h-96 rounded-2xl"></div>
             
             <div class="w-full p-6 bg-color-primary  md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
@@ -71,4 +71,3 @@
             </div>
         </main>
     </div>
-</section>

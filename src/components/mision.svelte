@@ -3,7 +3,7 @@
         <div class="shadow-2xl bg-color-header rounded-xl p-8 ml-auto lg:col-start-2 lg:max-w-2xl transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
             
                 <span class="text-xs uppercase text-color-second">Apoya nuestro objectivo</span>
-                <h3 class="text-3xl font-bold text-color-footer">¿Cuál es la MISIÓN?</h3>
+                <h3 class="text-3xl font-bold text-color-footer">¿Cuál es la <span class="text-color-primary">MISIÓN?</span> </h3>
                 <p class="my-4 text-lg text-color-nav">
                     Propiciar el desarrollo integral, social y humano de las comunidades del pacifico sur de
                     Colombia, gestionando condiciones favorables para la superación de las condiciones de

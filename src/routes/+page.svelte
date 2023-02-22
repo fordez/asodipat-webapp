@@ -3,7 +3,9 @@
 	import Calltoaction from '../components/calltoaction.svelte';
 	import Experiencia from '../components/experiencia.svelte';
 	import Faq from '../components/faq.svelte';
+	import Next from '../components/next.svelte';
 	import Ourallies from '../components/ourallies.svelte';
+	import Reels from '../components/reels.svelte';
 	import Stats from '../components/stats.svelte';
 	import Testimonial from '../components/testimonial.svelte';
 	import Title from '../components/title.svelte';
@@ -16,7 +18,9 @@
 <Title title='Nuestras Experiencia'/>
 <Experiencia />
 
-<Testimonial />
+<Testimonial/>
+
+<Next/>
 
 <Faq/>
 
