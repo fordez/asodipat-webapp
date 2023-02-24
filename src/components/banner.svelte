@@ -35,7 +35,7 @@
 		<div
 			class="py-10 text-start max-w-3xl text-white ml-7  rounded-2xl bg-gradient-to-r from-color-title mx-auto items-center "
 		>
-			<h1 class="ml-6 font-extrabold text-4xl">
+			<h1 class="ml-6 font-extrabold text-5xl text-color-header">
 				CONSTRUYENDO<br />UN FUTURO PACIFICO
 			</h1>
 
@@ -46,7 +46,7 @@
 			<div class="mt-4 ml-6 py-6 flex flex-wrap ">
 				<a
 					href="/participar"
-					class=" border rounded-xl px-10 py-3 flex  font-medium text-white hover:bg-color-primary focus:outline-none focus:ring active:text-opacity-75 sm:w-auto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 "
+					class=" border rounded-xl px-10 py-3 flex  font-medium text-color-header hover:bg-color-primary focus:outline-none focus:ring active:text-opacity-75 sm:w-auto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 "
 				>
 					<i class="fa-solid fa-handshake mx-2 text-4xl" />
 					<span class="flex flex-col items-start  ml-4 leading-none">

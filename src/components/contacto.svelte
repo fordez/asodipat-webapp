@@ -1,4 +1,4 @@
-<section class="py-8 p-6">
+<section class="py-4 p-2">
 	<div class=" grid shadow-2xl rounded-3xl bg-color-header p-6 max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 		<div class=" md:py-0 md:px-6">
 			<h1 class="sm:text-5xl text-4xl font-bold text-color-footer">Ponerse en contacto</h1>

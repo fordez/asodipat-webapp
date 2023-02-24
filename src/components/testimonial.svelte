@@ -32,15 +32,15 @@
 
 
 
+<section class="bg-color-header rounded-2xl  py-4  pb-5  max-w-6xl mx-auto">
+    <div class=" px-6  mx-auto">
+        <p class="text-3xl font-medium text-color-nav ">Testimonio</p>
 
-    <div class=" px-10 pb-8 mx-auto">
-        <p class="text-xl font-medium text-color-nav ">Testimonio</p>
-
-        <h1 class="mt-2 text-3xl font-semibold text-color-footer capitalize lg:text-4xl dark:text-white">
-            Lo que dicen de <span class="text-color-primary">Asodipat</span>
+        <h1 class="mt-2 text-5xl font-semibold text-color-footer capitalize lg:text-4xl dark:text-white">
+            Lo que dicen de <span class="text-color-primary" >asodipat</span> 
         </h1>
 
-        <main class="relative z-20 w-full p-4 mt-8 md:flex md:items-center ">
+        <main class="relative z-20 w-full p-4 mt-8 md:flex md:items-center xl:mt-12">
             <div class="absolute w-full bg-color-primary -z-10 md:h-96 rounded-2xl"></div>
             
             <div class="w-full p-6 bg-color-primary  md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
@@ -71,3 +71,4 @@
             </div>
         </main>
     </div>
+</section>

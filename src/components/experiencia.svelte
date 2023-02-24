@@ -2,7 +2,7 @@
 
 
     <!-- Section: Design Block -->
-    <section class="mb-32 p-8">
+    <section class="mb-32 p-2">
       <style>
         .zoom:hover img {
           transform: scale(1.1);

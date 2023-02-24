@@ -14,7 +14,7 @@
 
 <Aboutbanner />
 
-<Title title="Conoce Más De Nosotros" />
+<Title title="Conoce Más De " />
 
 <Mision />
 

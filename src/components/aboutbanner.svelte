@@ -11,7 +11,7 @@
   <img src={slides[0]} class="w-full h-full  object-cover absolute" />
   <div class=" relative py-20  " >
     <div class="py-10 text-start  text-white ml-5 max-w-2xl bg-gradient-to-r from-color-title mx-auto items-center ">
-      <h1 class="ml-6 font-extrabold text-5xl ">
+      <h1 class="ml-6 font-extrabold text-5xl text-color-header">
         ¿Quiénes SOMOS? 
       </h1>
   
