@@ -1,7 +1,6 @@
 <script>
 	import Contactofooter from "./contactofooter.svelte";
 	import Googlemaps from "./googlemaps.svelte";
-    import Navfooter from "./navfooter.svelte";
 	import Navheader from "./navheader.svelte";
     import Socialfooter from "./socialfooter.svelte";
 
@@ -9,12 +8,10 @@
 <footer class="text-center bg-color-header shadow-xl">
   <div class="container px-6 pt-6">
 
-	<div class="flex justify-center mx-auto mb-6 hidden sm:block max-w-xl p-6">
+	<div class="flex justify-center mx-auto mb-6 max-w-xl p-6">
 		<Navheader/>
     </div>
-    <div class="flex justify-center mb-6 sm:hidden">
-		<Navfooter/>
-    </div>
+    
     <div>
       <form action="">
         <div class="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">

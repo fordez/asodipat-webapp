@@ -41,14 +41,17 @@
 
 {#if visible}
   <div class="fixed inset-y-0 left-0 z-50 w-full bg-black bg-opacity-50 flex items-center justify-center" on:click={e => {if(e.target === e.currentTarget) closeDialogDonar()}}>
-    <div class="bg-color-header rounded-lg p-4 max-w-4xl overflow-hidden my-auto">
-        <button type="button" class="border p-1 border-color-naranja hover:bg-color-naranja hover:text-white text-color-naranja px-4 mr-2 rounded-xl" on:click={closeDialogDonar}>x</button>
+    <div class="bg-white rounded-lg p-4 max-w-4xl overflow-hidden my-auto">
+        <button type="button" class="text-2xl text-color-nav" on:click={closeDialogDonar}><i class="fa-regular fa-circle-xmark"></i></button>
       <div class="dialog-body overflow-y-auto h-full p-6">
-        <h1 class="text-color-nav font-bold text-3xl max-w-xs">Buscano y Siguenos En <span class="text-color-button" >Redes Sociales</span> </h1>
+        <h1 class="text-color-nav font-bold text-3xl max-w-xs">Siguenos En <span class="text-color-button" >Redes Sociales</span> </h1>
 
-        <div class="container p-2 mx-auto sm:p-4 text-color-nav">
+
+       
+
+        <div class="p-2 mx-auto sm:p-4 text-color-nav">
             <div class="overflow-x-auto">
-                <table class="max-w-xs text-xs ">
+                <table class="text-xs ">
                     <colgroup>
                         <col>
                         <col>
@@ -57,60 +60,47 @@
                         <col>
                         <col class="w-24">
                     </colgroup>
-                    <thead class="bg-color-nav  text-color-header text-lg font-bold">
-                        <tr class="text-left ">
-                            <th class="p-3">RSS</th>
-                            <th class="p-3">Usuario</th>
-                        </tr>
-                    </thead>
+                   
                     <tbody>
                         <tr class="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                             <td class="p-2">
                                 <i class="fa-brands fa-facebook text-2xl  hover:text-color-nav text-color-facebook   transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-150" />
                             </td>
                             <td class="p-2">
-                                <span class="text-md">@asodipat</span>
+                                <span class="text-lg">@asodipat</span>
                             </td>
                          
-                            <td class="p-2 text-right">
-                                <button type="button" class="bg-color-primary hover:bg-color-button text-white p-1 px-4 rounded-lg" on:click={copiarTexto}>Copiar</button>
-                            </td>
+                          
                         </tr>
                         <tr class="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                             <td class="p-2">
                                 <i class="fa-brands fa-instagram text-2xl hover:text-color-nav text-color-instagram    transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-150" />
                             </td>
                             <td class="p-2 text-md">
-                                <span class="text-md">@asodipat_</span>
+                                <span class="text-lg">@asodipat_</span>
                             </td>
                             
-                            <td class="p-2 text-right">
-                                <button type="button" class="bg-color-primary hover:bg-color-button text-white p-1 px-4 rounded-lg" on:click={copiarTexto}>Copiar</button>
-                            </td>
+                          
                         </tr>
                         <tr class="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                             <td class="p-2">
                                 <i class="fa-brands fa-twitter text-2xl hover:text-color-nav text-color-twiter  transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-150" />
                             </td>
                             <td class="p-2">
-                                <span class="text-md">@asodipat</span>
+                                <span class="text-lg">@asodipat</span>
                             </td>
                             
-                            <td class="p-2 text-right">
-                                <button type="button" class="bg-color-primary hover:bg-color-button text-white p-1 px-4 rounded-lg" on:click={copiarTexto}>Copiar</button>
-                            </td>
+                          
                         </tr>
                         <tr class="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                             <td class="p-2">
-                                <p>97412378923</p>
+                                <i class="fa-brands fa-youtube text-xl text-reb"></i>
                             </td>
                             <td class="p-2">
-                                <span class="text-md">@asodipat</span>
+                                <span class="text-lg">@asodipat</span>
                             </td>
                          
-                            <td class="p-2 text-right">
-                                <button type="button" class="bg-color-primary hover:bg-color-button text-white p-1 px-4 rounded-lg" on:click={copiarTexto}>Copiar</button>
-                            </td>
+                           
                         </tr>
                     </tbody>
                 </table>
@@ -120,7 +110,7 @@
       </div>
       
       <div class="flex justify-end mt-4 ">
-        <button type="button" class="border p-2 border-color-naranja hover:bg-color-naranja hover:text-white text-color-naranja px-4 mr-2 rounded-xl" on:click={closeDialogDonar}>Cerrar Ventana</button>
+        <button type="button" class="border p-2 border-color-nav hover:bg-color-nav hover:text-white text-color-nav px-4 mr-2 rounded-xl" on:click={closeDialogDonar}>Cerrar Ventana</button>
         
       </div>
     </div>

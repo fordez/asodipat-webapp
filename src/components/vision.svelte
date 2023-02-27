@@ -12,10 +12,10 @@
 	cargarContenido();
 </script>
 
-<div class="relative">
-	<div class="p-8 lg:grid lg:grid-flow-row-dense grid-cols-2 lg:gap-8 lg:items-center">
+<div class="relative mb-10">
+	<div class=" lg:grid lg:grid-flow-row-dense grid-cols-2 lg:gap-8 lg:items-center">
 		<div
-			class="shadow-2xl bg-color-header rounded-xl p-8 ml-auto lg:col-start-2-reverse lg:max-w-2xl transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110"
+			class="shadow-2xl bg-color-header rounded-xl p-8 ml-auto lg:col-start-2-reverse lg:max-w-2xl "
 		>
 			<span class="text-xs uppercase text-color-second">Acompañanos en nuestro alcance</span>
 			<h3 class="text-3xl font-bold text-color-footer">

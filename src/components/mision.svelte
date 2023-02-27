@@ -13,9 +13,9 @@
 </script>
 
 <div class="relative">
-	<div class="p-6  lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+	<div class=" lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
 		<div
-			class="shadow-2xl bg-color-header rounded-xl p-8 ml-auto lg:col-start-2 lg:max-w-2xl transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110"
+			class="shadow-2xl bg-color-header rounded-xl p-8 ml-auto lg:col-start-2 lg:max-w-2xl "
 		>
 			<span class="text-xs uppercase text-color-second">Apoya nuestro objectivo</span>
 			<h3 class="text-3xl font-bold text-color-footer">
@@ -29,7 +29,7 @@
 		</div>
 
 		{#if cargando}
-			<div class="p-10">
+			<div class="">
 				<div
 					class="w-16 h-16 border-4 border-dashed rounded-full mx-auto animate-spin border-color-nav"
 				/>

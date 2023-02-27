@@ -15,6 +15,7 @@
 		'Trabajando para fomentar la creatividad y preservar el patrimonio cultural.'
 	];
 
+
 	function handleNext() {
 		currentIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
 	}
@@ -25,50 +26,43 @@
 
 	setInterval(() => {
 		handleNext();
-	}, 10000); // cambia automáticamente la imagen cada 5 segundos
+	}, 15000); // cambia automáticamente la imagen cada 5 segundos
 </script>
 
-<div class="saturate-200  ">
-    <img src={slides[currentIndex]} class="w-full h-full  object-cover absolute  " />
+<div class="relative  object-none w-full h-90 bg-cover bg-top saturate-150">
+    <img src={slides[currentIndex]} class="w-full h-full  object-cover absolute" />
 
-	<div class=" relative py-20  ">
+
+	<div class=" relative py-24 ">
 		<div
-			class="py-10 text-start max-w-3xl text-white ml-7  rounded-2xl bg-gradient-to-r from-color-title mx-auto items-center "
+			class="py-10 text-start rounded-xl text-white ml-5 max-w-2xl bg-gradient-to-r from-color-title mx-auto items-center  "
 		>
-			<h1 class="ml-6 font-extrabold text-5xl text-color-header">
+			<h1 class="ml-6 font-extrabold text-3xl sm:text-5xl text-white">
 				CONSTRUYENDO<br />UN FUTURO PACIFICO
 			</h1>
 
-			<p class="mt-4 ml-4 max-w-xl text-xl text-white">
+			<p class="mt-4 ml-6 max-w-xl text-lg text-white">
 				{slogan[currentIndex]}
 			</p>
 
-			<div class="mt-4 ml-6 py-6 flex flex-wrap ">
-				<a
-					href="/participar"
-					class=" border rounded-xl px-10 py-3 flex  font-medium text-color-header hover:bg-color-primary focus:outline-none focus:ring active:text-opacity-75 sm:w-auto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 "
-				>
-					<i class="fa-solid fa-handshake mx-2 text-4xl" />
-					<span class="flex flex-col items-start  ml-4 leading-none">
-						<span class="mb-1 text-sm">Ir a</span>
-						<span class="font-semibold title-font">Participar</span>
-					</span>
-				</a>
-			</div>
+		</div>
+
+		<div class="flex items-center justify-between mt-6 ">
+			<button title="left arrow" class="p-2 ml-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-color-primary hover:text-white"on:click={handlePrev}>
+				<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+				</svg>
+			</button>
+	
+			<button title="right arrow" class="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 md:mx-6 hover:bg-color-primary hover:text-white"on:click={handleNext}>
+				<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+				</svg>
+			</button>
 		</div>
 	</div>
 
-
-	<button
-		class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-		on:click={handlePrev}
-	>
-		<i class="fa-sharp fa-solid fa-chevron-left text-white text-4xl ml-1 " />
-	</button>
-	<button
-		class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-		on:click={handleNext}
-	>
-		<i class="fa-sharp fa-solid fa-chevron-right text-white text-4xl mx-1 " />
-	</button>
+	
+	
 </div>
+

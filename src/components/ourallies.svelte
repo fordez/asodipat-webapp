@@ -70,8 +70,8 @@
 			</div>
 		</div>
 		<div class="flex flex-col  px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5">
-			<h1 class="font-medium leading-tight title-font text-4xl text-color-footer">
-				Nuestros Aliados
+			<h1 class="font-medium leading-tight title-font text-5xl text-color-footer">
+				Nuestros  <span class="text-color-primary" >Aliados</span> 
 			</h1>
 			<div class="flex space-x-2 sm:space-x-4 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
 				<svg

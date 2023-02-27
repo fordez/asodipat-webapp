@@ -24,13 +24,13 @@
 
 <div class="flex p-4 space-x-4 rounded-lg bg-color-footer transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
     <button class="" on:click={openDialogDonar}>
-    <div class="flex justify-center p-4 align-middle rounded-lg  bg-color-primary">
+    <div class="flex justify-center p-4 align-middle rounded-lg  bg-cian">
       <i class="fa-sharp fa-solid fa-heart text-4xl px-1 text-color-instagram"></i>
     </div>
   </button>
   
     <button class="" on:click={openDialogDonar}>
-    <div class="flex flex-col justify-center align-middle ">
+    <div class="flex flex-col justify-center text-white align-middle ">
       <p class="text-2xl font-semibold leading-none">Donar</p>
       <p class="capitalize">Experiencia</p>
     </div>
@@ -39,7 +39,7 @@
 
 {#if visible}
   <div class="fixed inset-y-0 left-0 z-50 w-full bg-black bg-opacity-50 flex items-center justify-center" on:click={e => {if(e.target === e.currentTarget) closeDialogDonar()}}>
-    <div class="bg-color-header rounded-lg p-4 max-w-4xl overflow-hidden my-auto">
+    <div class="bg-white rounded-lg p-4 max-w-4xl overflow-hidden my-auto">
       <div class="dialog-body overflow-y-auto h-full p-4">
         <h1 class="text-color-footer font-bold text-lg">Recibir Bitcoin</h1>
 

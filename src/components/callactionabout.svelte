@@ -8,7 +8,7 @@
 			<a href="/contacto" class="inline-flex items-center px-6 py-3 rounded-lg bg-color-primary hover:bg-color-button text-white dark:text-gray-900">
 				<i class="fa-sharp fa-solid fa-headset mx-2 text-xl"></i>
 				<span class="flex flex-col items-start  ml-4 leading-none">
-					<span class="text-lg title-font">Contactanos</span>
+					<span class="text-lg title-font">Contactar</span>
 				</span>
 			</a>
 		</div>

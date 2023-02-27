@@ -23,7 +23,9 @@ module.exports = {
       'color-button':'#0073FE ',
       'color-verde':'#00FF61',
       'color-purpura':'#B900FF',
-      'black':'#000000'
+      'black':'#000000',
+      'reb':'#FF0400',
+      'cian':'#00D4FF '
     },
     extend: {},
   },

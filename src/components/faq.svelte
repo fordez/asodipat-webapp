@@ -1,4 +1,4 @@
-<div class="space-y-4  mx-auto lg:p-8 py-12">
+<div class="space-y-4  mx-auto lg:p-8 py-6 ">
     <h1 class="text-5xl font-semibold text-color-header">Preguntas <span class="text-color-naranja" >Frecuente</span></h1>
     <details
       class="group border-l-4 border-color-naranja p-6 [&_summary::-webkit-details-marker]:hidden"

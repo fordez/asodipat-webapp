@@ -1,20 +1,20 @@
 <script>
 	import Logo from './logo.svelte';
-	import Navfooter from './navfooter.svelte';
+	import Navheader from './navheader.svelte';
 	import Socialheader from './socialheader.svelte';
 </script>
 
-<div class="flex flex-col bg-color-header shadow-xl rounded-3xl" >
-	<div class="basis-1/2  flex items-center justify-center ">
+<div class="flex flex-col bg-color-header shadow-xl " >
+	
+	<div class="flex items-center justify-center ">
 		<Logo />
-	</div>
-	<div class="basis-1/2  flex items-center justify-center p-2 ">
-		<Navfooter />
-
-		<div class="flex items-center justify-center">
-			<Socialheader />
+		<div class="ml-60 absolute">
+			<Socialheader/>
 		</div>
-
+	</div>
+	
+	<div class=" flex items-center justify-center p-2 ">
+		<Navheader/>
 	</div>
 
 	
