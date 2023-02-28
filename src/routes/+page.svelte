@@ -5,9 +5,11 @@
 	import Experiencia from '../components/experiencia.svelte';
 	import Faq from '../components/faq.svelte';
 	import News from '../components/news.svelte';
+	import Newsletter from '../components/newsletter.svelte';
 	import Next from '../components/next.svelte';
 	import Ourallies from '../components/ourallies.svelte';
 	import Stats from '../components/stats.svelte';
+	import Store from '../components/store.svelte';
 	import Testimonial from '../components/testimonial.svelte';
 	import Title from '../components/title.svelte';
 </script>
@@ -23,5 +25,6 @@
 </div>
 <Testimonial />
 <News/>
+<Newsletter/>
 <Ourallies />
 <Calltoaction/>

@@ -39,8 +39,8 @@
         <main class="max-w-5xl mx-auto relative z-20 w-full p-4 mt-8 md:flex md:items-center xl:mt-12">
             <div class="absolute w-full bg-color-primary -z-10 md:h-96 rounded-2xl"></div>
             
-            <div class="w-full p-6 bg-color-primary  md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
-                <img class=" w-24 mx-auto  object-cover shadow-md h-[20rem] w-80   saturate-150  rounded-2xl" src={image[currentIndex]} alt="client photo" />
+            <div class="w-full  p-6 bg-color-primary  md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+                <img class=" mx-auto  object-cover shadow-md h-[20rem] w-80   saturate-150  rounded-2xl" src={image[currentIndex]} alt="client photo" />
                 
                 <div class="mt-2 md:mx-6">
                     <div>

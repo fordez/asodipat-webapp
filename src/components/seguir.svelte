@@ -35,10 +35,6 @@
 </script>
 
 
-<div class="flex p-2 ">
-  <button class="" on:click={openDialogDonar}> <i class="{icon[currentIndex]} {iconColor[currentIndex]} text-2xl hover:text-color-primary transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-130" /></button>
-</div>
-
 {#if visible}
   <div class="fixed inset-y-0 left-0 z-50 w-full bg-black bg-opacity-50 flex items-center justify-center" on:click={e => {if(e.target === e.currentTarget) closeDialogDonar()}}>
     <div class="bg-white rounded-lg p-4 max-w-4xl overflow-hidden my-auto">
@@ -77,3 +73,18 @@
     </div>
   </div>
 {/if}
+
+
+  
+<div class="max-w-xs mx-auto rounded-6xl shadow-2xl bg-color-header">
+    <img src="/participar/seguir.jpg"  alt="" class="object-cover object-center  h-60 w-full   rounded-t-md dark:bg-gray-500">
+    <div class="flex flex-col justify-between p-4 space-y-8">
+        <div class="space-y-2">
+            <h2 class="text-2xl font-semibold tracking-wide text-color-nav">Siguenos En Redes Sociales</h2>
+            
+        </div>
+        <button class=" text-lg bg-color-button hover:bg-color-primary text-white font-bold p-2 rounded-lg px-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110"on:click={openDialogDonar}>
+            Seguir
+        </button>
+    </div>
+</div>

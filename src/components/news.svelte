@@ -2,7 +2,7 @@
 	import Next from "./next.svelte";
 
 </script>
-<section class="shadow-xl p-5">
+<section class="py-12 p-5">
 	<div
 		class="mx-auto flex flex-col items-center px-4  text-center py-6 md:px-10 lg:px-32 "
 	>

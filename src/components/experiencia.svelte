@@ -1,9 +1,30 @@
 
 <script>
-  let video = [
-    'https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Freels%2Freels1.mp4?alt=media&token=3b779cca-a7e7-41c0-9cc8-abcb34073af0',
-    'https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Freels%2Freels2.mp4?alt=media&token=e0145385-5b44-42db-93cb-64923a839d4e'
-  ]
+  import {collection, doc, onSnapshot} from 'firebase/firestore'
+	import { onDestroy } from 'svelte';
+  import {db} from '../firebase'
+
+  let experiencias = [];
+  let video = [];
+
+  const unsub = onSnapshot(collection(db,'experiencia'),
+  querySnapshot =>{
+   experiencias =  querySnapshot.docs.map(doc =>{
+      return {...doc.data(), id: doc.id}
+    })
+
+    console.log(experiencias)
+
+    experiencias.forEach((experiencia, index) =>{
+      video[index] = experiencia.videourl
+      console.log(video[index])
+    })
+  },(err) =>{
+    console.log(err);
+  })
+
+  onDestroy(unsub)
+
   let visible = false;
   let tooltipVisible = false;
   let currentIndex = 0;
@@ -23,48 +44,51 @@ function closeDialogDonar() {
 
 
 function handleNext() {
-		currentIndex = currentIndex === video.length - 1 ? 0 : currentIndex + 1;
+		currentIndex = currentIndex === experiencias.length - 1 ? 0 : currentIndex + 1;
+      
 	}
 
 	function handlePrev() {
-		currentIndex = currentIndex === 0 ? video.length - 1 : currentIndex - 1;
+		currentIndex = currentIndex === 0 ? experiencias.length - 1 : currentIndex - 1;
 	}
 </script>
 
 
 {#if visible}
-  <div class="fixed inset-y-0 left-0 z-50 w-full bg-black bg-opacity-50 flex items-center justify-center" on:click={e => {if(e.target === e.currentTarget) closeDialogDonar()}}>
-    <div class=" rounded-lg w-80 overflow-hidden my-auto">
-      <button type="button" class="text-2xl text-white" on:click={closeDialogDonar}><i class="fa-regular fa-circle-xmark"></i></button>
-      <div class="dialog-body overflow-y-auto  ">
-        <div class="relative  ">
-          <video class="  object-cover rounded-md shadow-lg"
-                 src={video[currentIndex]}
-                 poster="URL_DEL_POSTER"
-                 controls
-                 autoplay
-                 >
-          </video>
 
-          <button
-          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" on:click={handlePrev}
-          
-        >
-          <i class="fa-sharp fa-solid fa-chevron-left text-white text-4xl ml-1 " />
-        </button>
+
+<div class="fixed inset-y-0 left-0 z-50 w-full bg-black bg-opacity-50 flex items-center justify-center" on:click={e => {if(e.target === e.currentTarget) closeDialogDonar()}}>
+  <div class=" rounded-lg w-80 overflow-hidden my-auto">
+    <button type="button" class="text-2xl text-white" on:click={closeDialogDonar}><i class="fa-regular fa-circle-xmark"></i></button>
+    <div class="dialog-body overflow-y-auto  ">
+      <div class="relative  ">
+        <video class="  object-cover rounded-md shadow-lg"
+               src={video[currentIndex]}  
+               controls
+               autoplay
+               >
+        </video>
+
         <button
-          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" on:click={handleNext}
-          
-        >
-          <i class="fa-sharp fa-solid fa-chevron-right text-white text-4xl mx-1 " />
-        </button>
-        </div>
-       
-       
+        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" on:click={handlePrev}
+        
+      >
+        <i class="fa-sharp fa-solid fa-chevron-left text-white text-4xl ml-1 " />
+      </button>
+      <button
+        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" on:click={handleNext}
+        
+      >
+        <i class="fa-sharp fa-solid fa-chevron-right text-white text-4xl mx-1 " />
+      </button>
       </div>
-      
+     
+     
     </div>
+    
   </div>
+</div>
+  
 {/if}
 
     <section class="mb-32 ">

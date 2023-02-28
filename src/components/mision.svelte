@@ -17,7 +17,7 @@
 		<div
 			class="shadow-2xl bg-color-header rounded-xl p-8 ml-auto lg:col-start-2 lg:max-w-2xl "
 		>
-			<span class="text-xs uppercase text-color-second">Apoya nuestro objectivo</span>
+			<span class="text-xs uppercase text-color-second">Apoya nuestro objetivo</span>
 			<h3 class="text-3xl font-bold text-color-footer">
 				¿Cuál es la <span class="text-color-primary">MISIÓN?</span>
 			</h3>

@@ -20,10 +20,10 @@
 	}, 3000);
 </script>
 
-<section class="bg-color-header dark:text-gray-100">
+<section class="">
 	<div class="container flex flex-col-reverse mx-auto lg:flex-row">
 		<div class="lg:w-1/2 xl:w-3/5 mx-auto my-auto ">
-			<div class="flex flex-col items-center p-6 bg-color-header">
+			<div class="flex flex-col items-center p-6 bg-color-header shadow-2xl">
 				<div class=" p-6 bg-color-headermax-w-lg mx-auto">
 					<img
 						src={logos[currentIndex]}
