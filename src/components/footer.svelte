@@ -12,10 +12,6 @@ import Contactofooter from "./contactofooter.svelte";
 	<div class="flex justify-center mx-auto mb-6 max-w-xl p-6">
 		<Navheader/>
     </div>
-    
-    <div>
-      <Boletin/>
-    </div>
 
     <div class="mb-6">
 		<Socialfooter/>

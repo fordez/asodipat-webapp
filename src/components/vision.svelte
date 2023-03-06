@@ -82,7 +82,7 @@
 			apoyos de programas gubernamentales en el marco de la inclusión educativa con la elaboración y
 			comercialización de uniformes escolares a bajo costo.
 			<br /><br />
-			De este modo para el año 20xx ante las necesidades crecientes y la dinámicas sociales existentes,
+			De este modo para el año 2020 ante las necesidades crecientes y la dinámicas sociales existentes,
 			se efectúa una reestructuración organizativa dándole cavidad a un mayor campo de acción y gestión
 			de la asociativa.
 		</p>

@@ -8,12 +8,13 @@
   const hanldeSubmit = async () => {
     await addDoc(collection(db,'suscriptores'),suscriptores);
     console.log('Suscriptor guardado')
+    
   }
 </script>
 
 
 
-<form action="" on:submit|preventDefault={hanldeSubmit}>
+
     <div class="grid  gird-cols-1 gap-4  flex justify-center items-center">
      
       <div class="mb-2">
@@ -48,9 +49,8 @@
       </div>
 
       <div class="md:mr-auto mb-6 mx-auto">
-        <button type="submit" class="inline-block px-12 py-2 border-2 border-white text-white rounded-xl font-medium text-md leading-tight uppercase bg-color-primary hover:bg-color-button focus:outline-none focus:ring-0 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
+        <button type="submit" class="inline-block px-12 py-2 border-2 border-white text-white rounded-xl font-medium text-md leading-tight uppercase bg-color-primary hover:bg-color-button focus:outline-none focus:ring-0 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110"on:click={hanldeSubmit}>
             Suscribirse
         </button>
       </div>
     </div>
-  </form>

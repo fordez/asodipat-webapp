@@ -2,7 +2,7 @@
 <script>
   import {collection, doc, onSnapshot} from 'firebase/firestore'
 	import { onDestroy } from 'svelte';
-  import {db} from '../firebase'
+  import {db} from '../firebase';
 
   let experiencias = [];
   let video = [];
@@ -55,15 +55,14 @@ function handleNext() {
 
 
 {#if visible}
-
-
+<button class="" on:click={openDialogDonar}> </button>
 <div class="fixed inset-y-0 left-0 z-50 w-full bg-black bg-opacity-50 flex items-center justify-center" on:click={e => {if(e.target === e.currentTarget) closeDialogDonar()}}>
   <div class=" rounded-lg w-80 overflow-hidden my-auto">
     <button type="button" class="text-2xl text-white" on:click={closeDialogDonar}><i class="fa-regular fa-circle-xmark"></i></button>
     <div class="dialog-body overflow-y-auto  ">
       <div class="relative  ">
         <video class="  object-cover rounded-md shadow-lg"
-               src={video[currentIndex]}  
+               src={video[currentIndex]}
                controls
                autoplay
                >
@@ -104,7 +103,7 @@ function handleNext() {
           
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
-          <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fambiente.jpg?alt=media&token=1e13d6d7-d349-4838-8128-db4f2ec66a5b"
+          <img title="medio-ambiente" src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fambiente.jpg?alt=media&token=1e13d6d7-d349-4838-8128-db4f2ec66a5b"
             class="w-full transition duration-300 ease-linear align-middle" />
         
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -124,9 +123,8 @@ function handleNext() {
       <button class="" on:click={openDialogDonar}> 
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
-          <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Femprender.jpg?alt=media&token=bf9205dc-cae6-4648-8b7c-a5dd05628aac"
+          <img title="emprendimiento" src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Femprender.jpg?alt=media&token=bf9205dc-cae6-4648-8b7c-a5dd05628aac"
             class="w-full transition duration-300 ease-linear align-middle" />
-          <a href="#!">
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="flex justify-start items-end h-full">
@@ -138,13 +136,12 @@ function handleNext() {
                 class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
                 style="background-color: rgba(253, 253, 253, 0.15)"></div>
             </div>
-          </a>
         </div>
         </button>
         <button class="" on:click={openDialogDonar}> 
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
-          <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fconvivencia.jpg?alt=media&token=83292756-e627-436c-9753-c12791d4ae67"
+          <img title="convivencia-paz" src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fconvivencia.jpg?alt=media&token=83292756-e627-436c-9753-c12791d4ae67"
             class="w-full transition duration-300 ease-linear align-middle" />
           
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -164,7 +161,7 @@ function handleNext() {
         <button class="" on:click={openDialogDonar}> 
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
-          <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fdeporte.jpg?alt=media&token=a6c94fd6-5950-4fa1-bde1-493e770ecf57"
+          <img title="deporte" src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fdeporte.jpg?alt=media&token=a6c94fd6-5950-4fa1-bde1-493e770ecf57"
             class="w-full transition duration-300 ease-linear align-middle" />
          
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -202,7 +199,7 @@ function handleNext() {
        <button class="" on:click={openDialogDonar}>  
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
-          <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fayuda.jpg?alt=media&token=6c6745fb-b6b3-40ed-98d4-c461eb62f556"
+          <img title="programas-sociales" src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fayuda.jpg?alt=media&token=6c6745fb-b6b3-40ed-98d4-c461eb62f556"
             class="w-full transition duration-300 ease-linear align-middle" />
         
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"

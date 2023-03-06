@@ -76,12 +76,11 @@
 
 
   
-<div class="max-w-xs mx-auto rounded-6xl shadow-2xl bg-color-header">
-    <img src="/participar/seguir.jpg"  alt="" class="object-cover object-center  h-60 w-full   rounded-t-md dark:bg-gray-500">
-    <div class="flex flex-col justify-between p-4 space-y-8">
+<div class="max-w-xs mx-auto my-auto bg-color-nav rounded-3xl shadow-2xl bg-color-header">
+    <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fpremios%2Fpremio14.png?alt=media&token=6e3f749d-982f-4b55-89e7-3e95dcc892a1"  alt="" class="object-cover object-center h-30 w-30  mx-auto  rounded-t-md dark:bg-gray-500">
+    <div class="flex flex-col justify-between p-4 space-y-4">
         <div class="space-y-2">
-            <h2 class="text-2xl font-semibold tracking-wide text-color-nav">Siguenos En Redes Sociales</h2>
-            
+            <h2 class="text-2xl font-semibold tracking-wide text-white">Siguenos En Redes Sociales</h2>
         </div>
         <button class=" text-lg bg-color-button hover:bg-color-primary text-white font-bold p-2 rounded-lg px-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110"on:click={openDialogDonar}>
             Seguir

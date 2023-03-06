@@ -4,6 +4,7 @@
 	import Calltoaction from '../components/calltoaction.svelte';
 	import Experiencia from '../components/experiencia.svelte';
 	import Faq from '../components/faq.svelte';
+	import Grupo from '../components/grupo.svelte';
 	import News from '../components/news.svelte';
 	import Newsletter from '../components/newsletter.svelte';
 	import Next from '../components/next.svelte';
@@ -26,5 +27,7 @@
 <Testimonial />
 <News/>
 <Newsletter/>
+<Grupo/>
 <Ourallies />
+<Faq/>
 <Calltoaction/>

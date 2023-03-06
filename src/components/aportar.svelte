@@ -44,8 +44,6 @@
       <div class="dialog-body overflow-y-auto h-full p-6">
         <h1 class="text-color-nav font-bold text-3xl max-w-xs p-4">Aportar Herraminetas De <span class="text-color-button" >Trabajo</span> </h1>
 
-
-       
             <div class=" md:py-0 md:px-6">
                 <h1 class="text-2xl font-bold text-color-footer">Ponerse en contacto</h1>
                 <div class="space-y-4 py-6">
@@ -72,8 +70,6 @@
                 </div>
             </div> 
            
-
-      
         </div>
     </div>
   </div>
@@ -83,11 +79,11 @@
 
 
 
-<div class="max-w-xs mx-auto rounded-6xl shadow-2xl bg-color-header">
-    <img src="/participar/aportar.jpg" alt="" class="object-cover object-center h-60 w-full   rounded-t-md dark:bg-gray-500">
-    <div class="flex flex-col justify-between p-4 space-y-8">
+<div class="max-w-xs mx-auto my-auto rounded-3xl shadow-2xl bg-color-nav">
+    <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fpremios%2Fpremio5.png?alt=media&token=30a90fa5-3c62-4757-8015-3d64c1da04ef" alt="" class="object-cover object-center h-30 w-30  mx-auto rounded-t-md dark:bg-gray-500">
+    <div class="flex flex-col justify-between p-4 space-y-4">
         <div class="space-y-2">
-            <h2 class="text-2xl font-semibold tracking-wide text-color-nav">Aporta Herramientas De Trabajo</h2>
+            <h2 class="text-2xl font-semibold tracking-wide text-white">Aporta Herramientas De Trabajo</h2>
             
         </div>
         <button class=" text-lg bg-color-button hover:bg-color-primary text-white font-bold p-2 rounded-lg px-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110"on:click={openDialogDonar}>

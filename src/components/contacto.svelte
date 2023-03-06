@@ -1,3 +1,18 @@
+<script>
+	import {addDoc, collection, doc} from 'firebase/firestore'
+	import {db} from '../firebase'
+	let contacto = {
+		nombre:'',
+		correo:'',
+		mensaje:''
+	}
+  
+	const hanldeSubmit = async () => {
+	  await addDoc(collection(db,'mensaje'),contacto);
+	  console.log('mensaje guardado')
+	}
+  </script>
+
 <section class="py-4 ">
 	<div class=" grid shadow-2xl rounded-3xl bg-white p-6 max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 		<div class=" md:py-0 md:px-6">
@@ -25,19 +40,13 @@
 				<p class="pt-2 pb-4 text-color-nav">Rellena el formulario para enviarnos un correo</p>
 			</div>
 		</div>
-		<form novalidate="" class="flex flex-col  text-color-nav space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
-			<label class="block">
+		<form  class="flex flex-col  text-color-nav space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
 				<span class="mb-1 text-color-nav">Nombre:</span>
-				<input type="text" placeholder="" class=" shadow-2xl rounded-lg border border-color-nav  p-1 block w-full  focus:ring focus:ring-opacity-75 focus:ring-violet-400  text-color-footer">
-			</label>
-			<label class="block">
+				<input bind:value={contacto.nombre} type="text" placeholder="" class=" shadow-2xl rounded-lg border border-color-nav  p-1 block w-full  focus:ring focus:ring-opacity-75 focus:ring-violet-400  text-color-footer">
 				<span class="mb-1 text-color-nav">Correo:</span>
-				<input type="email" placeholder="" class="border border-color-nav p-1 block w-full rounded-lg shadow-2xl focus:ring focus:ring-opacity-75 focus:ring-violet-400 ">
-			</label>
-			<label class="block">
+				<input bind:value={contacto.correo} type="email" placeholder="" class="border border-color-nav p-1 block w-full rounded-lg shadow-2xl focus:ring focus:ring-opacity-75 focus:ring-violet-400 ">
 				<span class="mb-1 text-color-nav">Mensaje:</span>
-				<textarea rows="3" class="border border-color-nav block w-full rounded-lg focus:ring focus:ring-opacity-75 focus:ring-violet-400 "></textarea>
-			</label>
+				<textarea bind:value={contacto.mensaje} rows="3" class="border border-color-nav block w-full rounded-lg focus:ring focus:ring-opacity-75 focus:ring-violet-400 "></textarea>
 			<button type="button" class="self-center px-8 py-3 text-lg rounded text-white focus:ring hover:ring focus:ring-opacity-75 bg-color-primary  focus:ring-violet-400 hover:ring-violet-400">Enviar</button>
 		</form>
 	</div>

@@ -27,13 +27,7 @@ import Seguir from "./seguir.svelte";
 	</h1>
 </div>
 
-{#if cargando}
-<div class="p-10">
-    <div class="w-16 h-16 border-4 border-dashed rounded-full mx-auto animate-spin border-color-nav"></div>
-    <h1 class="text-center text-color-nav">Esperar 2 seg</h1>
-</div>
 
-{:else}
 <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-2 p-8 max-w-5xl  mx-auto">
    
         <Seguir/>
@@ -49,5 +43,5 @@ import Seguir from "./seguir.svelte";
         <Donar/>
   </div>
   
-{/if}
+
 

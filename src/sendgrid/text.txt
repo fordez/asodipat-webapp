@@ -1,0 +1,30 @@
+import nodemailer from "nodemailer";
+
+let to = "fordezdeveloper@gmail.com"
+
+export async function sendCorreo(to) {
+  let testAccount = await nodemailer.createTestAccount();
+
+  let transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false, 
+    auth: {
+      user: 'fordezdeveloper@gmail.com',
+      pass: 'vznkyoiqtzytfvpy', 
+    },
+  });
+
+  let info = await transporter.sendMail({
+    from: 'fordezdeveloper@gmail.com',
+    to: to, 
+    subject: "Sucripción al boletin de noticias asodipat", 
+    text: "Te suscribiste al boletin de noticias de Asodipat ", 
+    html: "<b>Hello world?</b>",
+  });
+
+  console.log(info);
+}
+
+
+el hada soberana de la cumbres invito un día a toda las hadas de las nieves a una fiesta en su palacio. todas acudieron envuelta en su capa de armiño y guardo sus carrosas de escarcha. sin embargo, una de ellas Alba al oír llorar a unos niños que vivían en una solitaria cabaña, se detuvo en el camino.  el hada entro a la pobre casa y encendió la chimenea los niños, calentándose junto a las llamas, le contaron que sus padres habían ido a trabajar ala ciudad y mientras tanto se moran de frió y miedo
