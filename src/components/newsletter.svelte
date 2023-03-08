@@ -1,9 +1,45 @@
 <script>
 	import Boletin from "./boletin.svelte";
 
-</script>
+    let visible = false;
+    let tooltipVisible = false;
+  
+    function openDialogDonar() {
+      visible = true;
+      document.body.classList.add('modal-open');
+    }
+  
+    function closeDialogDonar() {
+      visible = false;
+      document.body.classList.remove('modal-close');
+    }
+  
+    function copiarTexto() {
+      const texto = document.getElementById('texto-a-copiar').innerText;
+      navigator.clipboard.writeText(texto);
+      tooltipVisible = true;
+      setTimeout(() => {
+        tooltipVisible = false;
+      }, 2000); // Ocultar el tooltip después de 2 segundos
+    }
+  </script>
 
 
+{#if visible}
+  <div class="fixed inset-y-0 left-0 z-50 w-full bg-black bg-opacity-50 flex items-center justify-center" on:click={e => {if(e.target === e.currentTarget) closeDialogDonar()}}>
+    <div class="bg-white rounded-lg p-4 max-w-4xl overflow-hidden my-auto">
+      <div class="dialog-body overflow-y-auto h-full p-4">
+        <button type="button" class="text-2xl text-color-nav top-0 right-0" on:click={closeDialogDonar}><i class="fa-regular fa-circle-xmark"></i></button>
+      <div class="dialog-body overflow-y-auto h-full p-4">
+      
+        <h1 class="text-color-nav font-bold text-3xl max-w-xs p-4">Suscribete Al Boletín De<span class="text-color-button " > Noticias</span> </h1>
+        
+            <Boletin/>
+      </div>
+      </div>
+    </div>
+  </div>
+{/if}
 
 <div class="container my-12 mx-auto">
 
@@ -35,10 +71,7 @@
               <p class="my-8">
                 <span class="font-medium text-color-nav">Recibe las últimas noticias directamente en tu bandeja de entrada.
               </p>
-              
-                
-                <button type="button" class="w-full py-2 font-semibold rounded bg-color-primary text-white"on:click={openDialogDonar}>Suscribir</button>
-              
+                <button type="button" class="w-full py-2 font-semibold rounded bg-color-primary text-white" on:click={openDialogDonar}>Suscribete</button>
             </div>
           </div>
         </div>

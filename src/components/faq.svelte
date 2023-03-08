@@ -1,26 +1,27 @@
 <script>
-    let visible = false;
-    let tooltipVisible = false;
-  
-    function openDialogDonar() {
-      visible = true;
-      document.body.classList.add('modal-open');
-    }
-  
-    function closeDialogDonar() {
-      visible = false;
-      document.body.classList.remove('modal-close');
-    }
-  
-    function copiarTexto() {
-      const texto = document.getElementById('texto-a-copiar').innerText;
-      navigator.clipboard.writeText(texto);
-      tooltipVisible = true;
-      setTimeout(() => {
-        tooltipVisible = false;
-      }, 2000); // Ocultar el tooltip después de 2 segundos
-    }
-  </script>
+  let visible = false;
+  let tooltipVisible = false;
+
+  function openDialogDonar() {
+    visible = true;
+    document.body.classList.add('modal-open');
+    console.log('click open modal')
+  }
+
+  function closeDialogDonar() {
+    visible = false;
+    document.body.classList.remove('modal-close');
+  }
+
+  function copiarTexto() {
+    const texto = document.getElementById('texto-a-copiar').innerText;
+    navigator.clipboard.writeText(texto);
+    tooltipVisible = true;
+    setTimeout(() => {
+      tooltipVisible = false;
+    }, 2000); // Ocultar el tooltip después de 2 segundos
+  }
+</script>
 
 {#if visible}
   <div class="fixed inset-y-0 left-0 z-50 w-full bg-black bg-opacity-50 flex items-center justify-center" on:click={e => {if(e.target === e.currentTarget) closeDialogDonar()}}>
@@ -46,7 +47,6 @@
   </div>
 {/if}
 
-
 <section class=" mx-auto bg-color-header">
 	<div class="container max-w-4xl flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
     <h1 class="text-5xl font-semibold text-color-footer p-6">Preguntas <span class="text-color-primary" >Frecuente</span></h1>
@@ -64,7 +64,7 @@
 			</details>
 			<details class="w-full border border-color-nav rounded-lg">
 				<summary class="px-4 py-6 focus:outline-none text-color-footer">¿Cómo puedo involucrarme y ayudar en las actividades de la Asosación?</summary>
-				<p class="px-4 py-6 pt-0 ml-4 -mt-4 text-color-nav">La Asociación te invita a participar activamente en sus actividades a través del siguiente <span class="text-color-primary  hover:underline"><a href="/participar" target="_blank" rel="noopener noreferrer">enlace :</a></span> <br/> <br/>Allí encontrarás información detallada sobre las diferentes formas en las que puedes colaborar y hacer una contribución significativa a la acción que promueve la Asociación. <br/> <br/> Ya sea a través de donaciones, voluntariado, participación en eventos y campañas, o difundiendo su mensaje en tus redes sociales, tu apoyo es crucial para el éxito de la Asociación y para la consecución de sus objetivos. ¡Únete ahora y sé parte del cambio! </p>
+				<p class="px-4 py-6 pt-0 ml-4 -mt-4 text-color-nav">La Asociación te invita a participar activamente en sus actividades a través del siguiente <span class="text-color-primary  hover:underline"><a href="/participar" target="_blank" >enlace :</a></span> <br/> <br/>Allí encontrarás información detallada sobre las diferentes formas en las que puedes colaborar y hacer una contribución significativa a la acción que promueve la Asociación. <br/> <br/> Ya sea a través de donaciones, voluntariado, participación en eventos y campañas, o difundiendo su mensaje en tus redes sociales, tu apoyo es crucial para el éxito de la Asociación y para la consecución de sus objetivos. ¡Únete ahora y sé parte del cambio! </p>
 			</details>
       <details class="w-full border border-color-nav rounded-lg">
 				<summary class="px-4 py-6 focus:outline-none text-color-footer"> ¿Qué medidas de transparencia manejan para asegurar que los recursos se utilicen efectivamente?</summary>
@@ -76,10 +76,10 @@
 			</details>
 
       <details class="w-full border  border-color-nav rounded-lg">
-				<summary class="px-4 py-6 focus:outline-none text-color-footer">¿Cómo puedo hacer un aporte a la Asosación?</summary>
-				<p class="px-4 py-6 pt-0 ml-4 -mt-4 text-color-nav">Para hacer un aporte a la Asociación, necesitarás seguir los siguientes pasos:<br/> <br/> 
+				<summary class="px-4 py-6 focus:outline-none text-color-footer">¿Cómo puedo hacer una donación a la Asosación?</summary>
+				<p class="px-4 py-6 pt-0 ml-4 -mt-4 text-color-nav">Para hacer una donación a la Asociación puedes <span class="text-color-primary  hover:underline"><a href="/contacto" target="_blank" >contactarnos </a></span>o por medio de Bitcoin seguir los siguientes pasos:<br/> <br/> 
 
-					1. Obtener la dirección de Bitcoin proporcionada por la Asociación. Esta <button class="" on:click={openDialogDonar}> <span class="text-color-primary  hover:underline">  dirección </span> </button>es un código alfanumérico único que identifica la billetera de Bitcoin de la Asociación.<br/> <br/> 
+					1. Obtener la dirección de Bitcoin proporcionada por la Asociación. Esta <button class="text-color-primary  hover:underline" on:click={openDialogDonar}> dirección </button> es un código alfanumérico único que identifica la billetera de Bitcoin de la Asociación.<br/> <br/> 
 					
 					2. Si aún no tienes una billetera de Bitcoin, deberás crear una. Hay muchas opciones disponibles en línea, y la mayoría son gratuitas. Algunas opciones populares incluyen Coinbase, Binance y Kraken.<br/> <br/> 
 					

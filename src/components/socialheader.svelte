@@ -1,10 +1,12 @@
 
 <script>
+	import Networking from "./networking.svelte";
+
     let visible = false;
     let tooltipVisible = false;
     let currentIndex = 0;
-    let icon = ['fa-brands fa-twitter', 'fa-brands fa-facebook', 'fa-brands fa-instagram',' fa-brands fa-youtube']
-    let iconColor = ['text-color-twiter','text-color-facebook', 'text-color-instagram','text-reb']
+    let icon = ['fa-brands fa-tiktok','fa-brands fa-twitter', 'fa-brands fa-facebook', 'fa-brands fa-instagram',' fa-brands fa-youtube']
+    let iconColor = ['text-black','text-color-twiter','text-color-facebook', 'text-color-instagram','text-reb']
 
     function handleNext() {
 		currentIndex = currentIndex === icon.length - 1 ? 0 : currentIndex + 1;
@@ -44,35 +46,7 @@
     <div class="bg-white rounded-lg p-4 max-w-4xl overflow-hidden my-auto">
         <button type="button" class="text-2xl text-color-nav top-0 right-0" on:click={closeDialogDonar}><i class="fa-regular fa-circle-xmark"></i></button>
       <div class="dialog-body overflow-y-auto h-full p-6">
-        <h1 class="text-color-nav font-bold text-3xl max-w-xs">Siguenos En <span class="text-color-button" >Redes Sociales</span> </h1>
-
-
-        <div class="grid grid-cols-2 grid-rows-4 gap-4 text-color-nav p-8">
-            <div class="text-center">
-                <i class="fa-brands fa-facebook text-2xl  hover:text-color-nav text-color-facebook   transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-150" />
-            </div>
-            <div>@asodipat</div>
-            <div class="text-center">
-                <i class="fa-brands fa-instagram text-2xl hover:text-color-nav text-color-instagram    transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-150" />
-            </div>
-            <div>
-                @asodipat_
-            </div>
-            <div class="text-center" >
-                <i class="fa-brands fa-twitter text-2xl hover:text-color-nav text-color-twiter  transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-150" />
-            </div>
-            <div>
-                @asodipat
-            </div>
-            <div class="text-center" >
-                <i class="fa-brands fa-youtube text-xl text-reb"></i>
-            </div>
-            <div>
-                @asodipat
-            </div>
-          </div>
-
-      
+        <Networking/>
         </div>
     </div>
   </div>

@@ -47,10 +47,6 @@
 {/if}
 
 
-
-
-
-
 <div class="max-w-xs mx-auto rounded-3xl shadow-2xl bg-color-nav">
     <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fpremios%2Fpremio6.png?alt=media&token=91fb1b35-7840-4a6d-978f-2b2a94aa2a76" alt="" class="object-cover object-center h-30 w-30 mx-auto  rounded-t-md dark:bg-gray-500">
     <div class="flex flex-col justify-between p-4 space-y-4">

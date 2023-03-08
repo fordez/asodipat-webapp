@@ -40,8 +40,6 @@
   </div>
 {/if}
 
-
-
 <div class="max-w-xs mx-auto my-auto rounded-3xl shadow-2xl bg-color-nav">
     <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fpremios%2Fpremio16.png?alt=media&token=e054167b-20d2-4434-8790-3ca4c84701ea"  alt="" class="object-cover object-center  h-30 w-30 mx-auto   rounded-t-md ">
     <div class="flex flex-col justify-between p-4 space-y-4">

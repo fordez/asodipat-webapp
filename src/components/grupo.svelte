@@ -33,7 +33,6 @@
     
       <h1 class="text-color-nav font-bold text-3xl max-w-xs p-4">Suscribete Al Boletín De<span class="text-color-button " > Noticias</span> </h1>
       
-         <Unete/>
     </div>
     </div>
   </div>

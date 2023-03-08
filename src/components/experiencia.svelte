@@ -96,7 +96,6 @@ function handleNext() {
           transform: scale(1.1);
         }
       </style>
-  
       <div class="grid lg:grid-cols-3 gap-6">
         
           <button class="" on:click={openDialogDonar}> 
@@ -138,7 +137,7 @@ function handleNext() {
             </div>
         </div>
         </button>
-        <button class="" on:click={openDialogDonar}> 
+        <button class="" on:click={openDialogDonar}>
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
           <img title="convivencia-paz" src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fconvivencia.jpg?alt=media&token=83292756-e627-436c-9753-c12791d4ae67"
