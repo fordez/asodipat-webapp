@@ -3,14 +3,44 @@
 	import {db} from '../firebase'
 	let contacto = {
 		nombre:'',
+		celular:'',
 		correo:'',
 		mensaje:''
 	}
+	let textbuton = 'text-white';
+	let enviado = false;
   
 	const hanldeSubmit = async () => {
+	const button = document.querySelector('#btn');
+    button.classList.add('btn-loading');
+    const icon = button.querySelector('span');
+    icon.classList.remove('hidden');
+    textbuton = 'text-color-primary'
+	document.getElementById("btn").disabled = true;
 	  await addDoc(collection(db,'mensaje'),contacto);
-	  console.log('mensaje guardado')
+	  console.log('mensaje enviado')
+
+	contacto.nombre = '';
+	contacto.celular = '';
+    contacto.correo = '';
+	contacto.mensaje = '';
+    enviado = true; // actualizar el estado después del envío
+	document.getElementById("btn").disabled = false;
+	icon.classList.add('hidden');
+	textbuton = 'text-white'
+	
 	}
+
+	const handleChange = (event) => {
+    suscriptores.correo = event.target.value;
+    if (validarEmail(suscriptores.correo)) {
+      // Si el correo electrónico es válido, eliminar la clase CSS del campo de entrada
+      document.getElementById('Input1').classList.remove('border', 'border-color-primary');
+      document.getElementById('Input2').classList.remove('border', 'border-color-primary');
+	  document.getElementById('Input3').classList.remove('border', 'border-color-primary');
+	  document.getElementById('Input4').classList.remove('border', 'border-color-primary');
+    }
+  };
   </script>
 
 <section class="py-4 ">
@@ -37,17 +67,28 @@
 					</svg>
 					<span class="text-color-nav">asodipat2022@gmail.com</span>
 				</p>
-				<p class="pt-2 pb-4 text-color-nav">Rellena el formulario para enviarnos un correo</p>
+				
 			</div>
 		</div>
-		<form  class="flex flex-col  text-color-nav space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
-				<span class="mb-1 text-color-nav">Nombre:</span>
-				<input bind:value={contacto.nombre} type="text" placeholder="" class=" shadow-2xl rounded-lg border border-color-nav  p-1 block w-full  focus:ring focus:ring-opacity-75 focus:ring-violet-400  text-color-footer">
-				<span class="mb-1 text-color-nav">Correo:</span>
-				<input bind:value={contacto.correo} type="email" placeholder="" class="border border-color-nav p-1 block w-full rounded-lg shadow-2xl focus:ring focus:ring-opacity-75 focus:ring-violet-400 ">
-				<span class="mb-1 text-color-nav">Mensaje:</span>
-				<textarea bind:value={contacto.mensaje} rows="3" class="border border-color-nav block w-full rounded-lg focus:ring focus:ring-opacity-75 focus:ring-violet-400 "></textarea>
-			<button type="button" class="self-center px-8 py-3 text-lg rounded text-white focus:ring hover:ring focus:ring-opacity-75 bg-color-primary  focus:ring-violet-400 hover:ring-violet-400">Enviar</button>
+		<div>
+		<p class="sm:text-3xl text-2xl text-color-footer ml-3 p-5">Nosotros te contactamos</p>
+		<form on:submit|preventDefault={hanldeSubmit} class="flex flex-col  text-color-nav space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+				<input id='Input1' on:input={handleChange} bind:value={contacto.nombre} type="text" placeholder="Nombre Completo" class=" shadow-2xl rounded-lg border border-color-nav  p-1 block w-full focus:ring  text-color-footer">
+				<input id='Input2' on:input={handleChange} bind:value={contacto.celular} type="number" placeholder="Numero Celular" class=" shadow-2xl rounded-lg border border-color-nav  p-1 block w-full focus:ring  text-color-footer">
+				<input id='Input3' on:input={handleChange}  bind:value={contacto.correo} type="email" placeholder="Correo Electrónico" class="border border-color-nav p-1 block w-full rounded-lg shadow-2xl focus:ring ">
+				<textarea id='Input4' bind:value={contacto.mensaje} placeholder="Dejanos Un Mensaje" rows="3" class="border border-color-nav block w-full rounded-lg focus:ring  "></textarea>
+				<button
+				id='btn'
+				class="relative inline-block text-white bg-color-primary rounded-lg px-4 py-2 text-base font-medium hover:bg-primary-light focus:outline-none focus:shadow-outline-primary disabled:opacity-50 disabled:cursor-not-allowed"
+				type="submit"
+			  >
+				<span class="absolute inset-0 flex items-center justify-center hidden">
+				  <i class="fas fa-spinner fa-spin text-2xl"></i>
+				</span>
+				<span class="{textbuton}">
+				  Enviar</span>
+			  </button>
 		</form>
+	</div>
 	</div>
 </section>

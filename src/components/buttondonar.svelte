@@ -21,21 +21,21 @@
       }, 2000); // Ocultar el tooltip después de 2 segundos
     }
   </script>
-
+<button class="" on:click={openDialogDonar}>
 <div class="flex p-4 space-x-4 rounded-lg bg-color-footer transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
-    <button class="" on:click={openDialogDonar}>
+    
     <div class="flex justify-center p-4 align-middle rounded-lg  bg-cian">
       <i class="fa-sharp fa-solid fa-heart text-4xl px-1 text-color-instagram"></i>
     </div>
-  </button>
   
-    <button class="" on:click={openDialogDonar}>
+    
     <div class="flex flex-col justify-center text-white align-middle ">
       <p class="text-2xl font-semibold leading-none">Donar</p>
       <p class="capitalize">Experiencia</p>
     </div>
-  </button>
+  
   </div>
+</button>
 
 {#if visible}
   <div class="fixed inset-y-0 left-0 z-50 w-full bg-black bg-opacity-50 flex items-center justify-center" on:click={e => {if(e.target === e.currentTarget) closeDialogDonar()}}>

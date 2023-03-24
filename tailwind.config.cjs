@@ -24,7 +24,7 @@ module.exports = {
       'color-verde':'#00FF61',
       'color-purpura':'#B900FF',
       'black':'#000000',
-      'reb':'#FF0400',
+      'red':'#FF0400',
       'cian':'#00D4FF '
     },
     extend: {},

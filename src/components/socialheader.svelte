@@ -6,7 +6,7 @@
     let tooltipVisible = false;
     let currentIndex = 0;
     let icon = ['fa-brands fa-tiktok','fa-brands fa-twitter', 'fa-brands fa-facebook', 'fa-brands fa-instagram',' fa-brands fa-youtube']
-    let iconColor = ['text-black','text-color-twiter','text-color-facebook', 'text-color-instagram','text-reb']
+    let iconColor = ['text-black','text-color-twiter','text-color-facebook', 'text-color-instagram','text-red']
 
     function handleNext() {
 		currentIndex = currentIndex === icon.length - 1 ? 0 : currentIndex + 1;

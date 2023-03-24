@@ -52,26 +52,11 @@
       }, 2000); // Ocultar el tooltip después de 2 segundos
     }
 
-switch (currentIndex) {
-  case 1:
-    console.log("Opción 1");
-    break;
-  case 2:
-    console.log("Opción 2");
-    break;
-  case 3:
-    console.log("Opción 3");
-    break;
-  default:
-    console.log("Opción no válida");
-}
-
-
   </script>
 
 <div class="flex p-4 space-x-4 rounded-lg bg-color-footer transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110">
     <a href="/participar">
-    <div class="flex justify-center p-4 align-middle rounded-lg  bg-color-button">
+    <div class="flex justify-center p-4 align-middle rounded-lg bg-color-button">
         <i class="fa-sharp fa-regular fa-handshake text-4xl "></i>
     </div>
   </a>

@@ -8,9 +8,9 @@
         '“ En nombre de toda la comunidad, queremos agradecer a Asodipat por organizar este evento, que tuvo un impacto significativo donde pudimos recibir estas ayudas necesarios para hacer frente a la situación difícil actual.”'
     ]
     let image = [
-        'https://firebasestorage.googleapis.com/v0/b/asodipat.appspot.com/o/imagenes-web-asodipat%2Ftestimonial%2Ftestimonial1.jpg?alt=media&token=2d1548d0-8b04-46e5-89f6-905ccacc7209',
-        'https://firebasestorage.googleapis.com/v0/b/asodipat.appspot.com/o/imagenes-web-asodipat%2Ftestimonial%2Ftestimonial2.jpg?alt=media&token=8edf9eb1-efa7-4d98-bc5b-7fa2d059e58f',
-        'https://firebasestorage.googleapis.com/v0/b/asodipat.appspot.com/o/imagenes-web-asodipat%2Ftestimonial%2Ftestimonial3.jpg?alt=media&token=590f0e65-4524-45fc-b895-a48d0a359ee8'
+        'https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Ftestimonial%2Femprender9.jpg?alt=media&token=17fa48f2-1a6a-499c-9a1a-8e2f3b089253',
+        'https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Ftestimonial%2Fdeporte9.jpg?alt=media&token=2b743ec6-a045-40b6-93a6-6fa3e6b54c2f',
+        'https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Ftestimonial%2Fayuda5.jpg?alt=media&token=eefbdfdb-e9ba-4e73-8f91-54abedd4f4c4'
     ]
 
     function handleNext() {
@@ -40,7 +40,7 @@
             <div class="absolute w-full bg-color-primary -z-10 md:h-96 rounded-2xl"></div>
             
             <div class="w-full  p-6 bg-color-primary  md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
-                <img class=" mx-auto  object-cover shadow-md h-[20rem] w-80   saturate-150  rounded-2xl" src={image[currentIndex]} alt="client photo" />
+                <img class=" mx-auto  object-cover shadow-md h-[20rem] w-80   saturate-150  rounded-2xl"  src={image[currentIndex]} alt="client photo" />
                 
                 <div class="mt-2 md:mx-6">
                     <div>

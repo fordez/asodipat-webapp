@@ -1,4 +1,5 @@
 <script>
+
 	let currentIndex = 0;
 	let slides = [
 		'banner1.jpg',
@@ -38,9 +39,7 @@
 			class="py-10 text-start rounded-xl text-white ml-5 max-w-2xl bg-gradient-to-r from-color-title mx-auto items-center  "
 		>
 			<h1 class="ml-6 font-extrabold text-3xl sm:text-5xl text-white">
-				CONSTRUYENDO<br />UN FUTURO PACIFICO
-			</h1>
-
+				CONSTRUYENDO<br />UN FUTURO SOSTENIBLE
 			<p class="mt-4 ml-6 max-w-xl text-lg text-white">
 				{slogan[currentIndex]}
 			</p>
