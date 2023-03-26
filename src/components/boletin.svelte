@@ -5,8 +5,10 @@
 
   let respuesta = '';
   let color = '';
-  let textbuton = 'text-white'; 
-  let suscriptores = {
+  let textbuton = 'text-white';
+  let subject = ' quedaste suscripto al boletín de noticias!'
+  let mensajeCorreo = 'En nombre de la Asociación Asodipat, nos complace informarle que hemos recibido sus datos y estamos procesando su solicitud para proporcionarle información detallada sobre nuestra asociación y las actividades que realizamos.'
+  let suscriptor = {
     nombre: '',
     correo: '',
   };
@@ -20,7 +22,7 @@
 
   const hanldeSubmit = async () => {
     
-    if (!validarEmail(suscriptores.correo)) {
+    if (!validarEmail(suscriptor.correo)) {
       // Si el correo electrónico no es válido, agregar una clase CSS al campo de entrada
       document.getElementById('exampleFormControlInput1').classList.add('border', 'border-red');
       return;
@@ -32,7 +34,7 @@
     icon.classList.remove('hidden');
     textbuton = 'text-color-primary'
 
-    const verifyEmail = await getDocs(query(collection(db, 'suscriptores'), where('correo', '==', suscriptores.correo)));
+    const verifyEmail = await getDocs(query(collection(db, 'suscriptores'), where('correo', '==', suscriptor.correo)));
    if(verifyEmail.size > 0){
     respuesta = 'Correo ya existe';
     color = 'text-color-naranja';
@@ -45,9 +47,9 @@
    }
    else{
     document.getElementById("btn").disabled = true;
-    await addDoc(collection(db, 'suscriptores'), suscriptores);
+    await addDoc(collection(db, 'suscriptores'), suscriptor);
     console.log('Suscriptor Guardado');
-    let status = await enviarCorreo(suscriptores.correo, suscriptores.nombre);
+    let status = await enviarCorreo(suscriptor.correo, suscriptor.nombre, subject, mensajeCorreo);
 
     if(status == 'ok'){
       respuesta = 'Gracias por suscribirte'
@@ -56,8 +58,8 @@
     }
 
     // Limpiar el campo de entrada después de enviar el formulario
-    suscriptores.nombre = '';
-    suscriptores.correo = '';
+    suscriptor.nombre = '';
+    suscriptor.correo = '';
     enviado = true; // actualizar el estado después del envío
    
     const button = document.querySelector('#btn');
@@ -70,8 +72,8 @@
   
   // Función de manejo de cambios en el campo de entrada de correo electrónico
   const handleChange = (event) => {
-    suscriptores.correo = event.target.value;
-    if (validarEmail(suscriptores.correo)) {
+    suscriptor.correo = event.target.value;
+    if (validarEmail(suscriptor.correo)) {
       // Si el correo electrónico es válido, eliminar la clase CSS del campo de entrada
       document.getElementById('exampleFormControlInput1').classList.remove('border', 'border-color-primary');
       document.getElementById('exampleFormControlInput2').classList.remove('border', 'border-color-primary');
@@ -83,7 +85,7 @@
   <form on:submit|preventDefault={hanldeSubmit}>
     <div class="mb-2">
       <input
-        bind:value={suscriptores.nombre}
+        bind:value={suscriptor.nombre}
         type="text"
         class="form-control block w-30 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-color-primary rounded-lg focus:outline-none focus:border-primary-light focus:shadow-outline-primary"
         id="exampleFormControlInput1"
@@ -93,7 +95,7 @@
     </div>
     <div class="mb-2">
       <input
-        bind:value={suscriptores.correo}
+        bind:value={suscriptor.correo}
         type="email"
         class="form-control block w-30 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-color-primary rounded-lg focus:outline-none focus:border-primary-light focus:shadow-outline-primary"
         id="exampleFormControlInput2"

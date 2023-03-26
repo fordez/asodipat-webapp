@@ -1,7 +1,5 @@
 
 <script>
-	import Contacto from "./contacto.svelte";
-
     let visible = false;
     let tooltipVisible = false;
     let currentIndex = 0;
@@ -24,15 +22,6 @@
   function closeDialogDonar() {
     visible = false;
     document.body.classList.remove('modal-close');
-  }
-
-  function copiarTexto() {
-    const texto = document.getElementById('texto-a-copiar').innerText;
-    navigator.clipboard.writeText(texto);
-    tooltipVisible = true;
-    setTimeout(() => {
-      tooltipVisible = false;
-    }, 2000); // Ocultar el tooltip después de 2 segundos
   }
 </script>
 

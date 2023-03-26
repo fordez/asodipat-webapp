@@ -47,7 +47,7 @@
   </div>
 {/if}
   
-<div class="max-w-xs mx-auto my-auto bg-color-nav rounded-3xl shadow-2xl bg-color-header">
+<div class="max-w-xs mx-auto my-auto bg-color-nav rounded-3xl shadow-2xl bg-color-nav">
     <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fpremios%2Fpremio14.png?alt=media&token=6e3f749d-982f-4b55-89e7-3e95dcc892a1"  alt="" class="object-cover object-center h-30 w-30  mx-auto  rounded-t-md dark:bg-gray-500">
     <div class="flex flex-col justify-between p-4 space-y-4">
         <div class="space-y-2">

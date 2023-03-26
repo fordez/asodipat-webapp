@@ -62,7 +62,7 @@
 	<div class="text-center">
 		<a href="https://www.youtube.com/channel/UCwaudL_5D92s-XM6jBHiLUg" target="_blank">
 			<i
-				class="fa-brands fa-youtube text-xl text-reb hover:text-color-nav text-color-facebook   transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-150"
+				class="fa-brands fa-youtube text-xl text-red hover:text-color-nav text-color-facebook   transition ease-in-out delay-30  hover:-translate-y-1 hover:scale-150"
 			/></a
 		>
 	</div>

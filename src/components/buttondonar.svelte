@@ -27,13 +27,10 @@
     <div class="flex justify-center p-4 align-middle rounded-lg  bg-cian">
       <i class="fa-sharp fa-solid fa-heart text-4xl px-1 text-color-instagram"></i>
     </div>
-  
-    
     <div class="flex flex-col justify-center text-white align-middle ">
       <p class="text-2xl font-semibold leading-none">Donar</p>
       <p class="capitalize">Experiencia</p>
     </div>
-  
   </div>
 </button>
 

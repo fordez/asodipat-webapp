@@ -1,13 +1,18 @@
 <script>
 	import {addDoc, collection, doc} from 'firebase/firestore'
 	import {db} from '../firebase'
+	import { enviarCorreo } from '../funtiones/sendemail';
 	let contacto = {
 		nombre:'',
 		celular:'',
 		correo:'',
 		mensaje:''
 	}
+	let subject = ' Asodipat se comunicara contigo!';
+	let mensajeCorreo = 'En nombre de la Asociación Asodipat, nos complace informarle que hemos recibido sus datos y estamos procesando su solicitud para proporcionarle información detallada sobre nuestra asociación y las actividades que realizamos';
 	let textbuton = 'text-white';
+	let respuesta = '';
+	let color = '';
 	let enviado = false;
   
 	const hanldeSubmit = async () => {
@@ -15,19 +20,29 @@
     button.classList.add('btn-loading');
     const icon = button.querySelector('span');
     icon.classList.remove('hidden');
-    textbuton = 'text-color-primary'
+    textbuton = 'text-color-primary';
 	document.getElementById("btn").disabled = true;
+		
+	let nombre = contacto.nombre.toUpperCase()
+
 	  await addDoc(collection(db,'mensaje'),contacto);
+	  let status = await enviarCorreo(contacto.correo, nombre, subject, mensajeCorreo)
 	  console.log('mensaje enviado')
+
+	  if(status == 'ok'){
+      respuesta = '¡Enviado con éxito!';
+      color = 'text-color-verde';
+    }
 
 	contacto.nombre = '';
 	contacto.celular = '';
     contacto.correo = '';
 	contacto.mensaje = '';
     enviado = true; // actualizar el estado después del envío
-	document.getElementById("btn").disabled = false;
 	icon.classList.add('hidden');
 	textbuton = 'text-white'
+
+	document.getElementById("btn").disabled = false;
 	
 	}
 
@@ -77,6 +92,11 @@
 				<input id='Input2' on:input={handleChange} bind:value={contacto.celular} type="number" placeholder="Numero Celular" class=" shadow-2xl rounded-lg border border-color-nav  p-1 block w-full focus:ring  text-color-footer">
 				<input id='Input3' on:input={handleChange}  bind:value={contacto.correo} type="email" placeholder="Correo Electrónico" class="border border-color-nav p-1 block w-full rounded-lg shadow-2xl focus:ring ">
 				<textarea id='Input4' bind:value={contacto.mensaje} placeholder="Dejanos Un Mensaje" rows="3" class="border border-color-nav block w-full rounded-lg focus:ring  "></textarea>
+				
+				<div class="{color} text-sm mb-2 text-center">
+					<p>{respuesta}</p>
+				  </div>
+				
 				<button
 				id='btn'
 				class="relative inline-block text-white bg-color-primary rounded-lg px-4 py-2 text-base font-medium hover:bg-primary-light focus:outline-none focus:shadow-outline-primary disabled:opacity-50 disabled:cursor-not-allowed"

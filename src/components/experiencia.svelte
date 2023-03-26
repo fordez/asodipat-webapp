@@ -178,7 +178,7 @@ function handleNext() {
             </div>
         </div>
         </button>
-        <button class="" on:click={openDialogAmbiente}>
+        <button class="" >
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
           <img title="convivencia-paz" src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fconvivencia.jpg?alt=media&token=83292756-e627-436c-9753-c12791d4ae67"
@@ -198,7 +198,7 @@ function handleNext() {
         
         </div>
         </button>
-        <button class="" on:click={openDialogAmbiente}> 
+        <button class=""> 
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
           <img title="deporte" src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fdeporte.jpg?alt=media&token=a6c94fd6-5950-4fa1-bde1-493e770ecf57"
@@ -217,7 +217,7 @@ function handleNext() {
             </div>
         </div>
         </button>
-        <button  on:click={openDialogAmbiente}> 
+        <button > 
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
           <img src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fcultura.jpg?alt=media&token=b6747964-df1a-4e56-bfb9-661e12c926bf"
@@ -236,7 +236,7 @@ function handleNext() {
             </div>
         </div>
        </button>
-       <button on:click={openDialogGestion}>  
+       <button>  
         <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
           style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
           <img title="programas-sociales" src="https://firebasestorage.googleapis.com/v0/b/asodipat/o/webapp%2Fexperiencia%2Fayuda.jpg?alt=media&token=6c6745fb-b6b3-40ed-98d4-c461eb62f556"
