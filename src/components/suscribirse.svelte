@@ -31,7 +31,7 @@
         <button type="button" class="text-2xl text-color-nav top-0 right-0" on:click={closeDialogDonar}><i class="fa-regular fa-circle-xmark"></i></button>
       <div class="dialog-body overflow-y-auto h-full p-4">
       
-        <h1 class="text-color-nav font-bold text-3xl max-w-xs p-4">Suscribete Al Boletín De<span class="text-color-button " > Noticias</span> </h1>
+        <h1 class="text-color-nav font-bold text-3xl max-w-xs p-4">Suscribete Al Boletín De<span class="text-color-button ml-2" > Noticias</span> </h1>
         
             <Boletin/>
       </div>

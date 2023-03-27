@@ -29,7 +29,7 @@
     <div class="bg-white rounded-lg p-4 max-w-4xl overflow-hidden my-auto">
       <button type="button" class="text-2xl text-color-nav top-0 right-0" on:click={closeDialogDonar}><i class="fa-regular fa-circle-xmark"></i></button>
       <div class="dialog-body overflow-y-auto h-full p-4">
-        <h1 class="text-color-nav font-bold text-3xl max-w-xs p-2">Aporta Herramientas De <span class="text-color-button " >  Trabajo</span> </h1>
+        <h1 class="text-color-nav font-bold text-3xl max-w-xs p-2">Unirse Al Grupo De <span class="text-color-button ml-2" >  Facebook</span> </h1>
 
       </div>
     
@@ -47,7 +47,7 @@
             
         </div>
         <button class=" text-lg bg-color-button hover:bg-color-primary text-white font-bold p-2 rounded-lg px-5 transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-110"on:click={openDialogDonar}>
-            Uneté
+            Unirse
         </button>
     </div>
 </div>

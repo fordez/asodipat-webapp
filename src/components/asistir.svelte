@@ -29,8 +29,8 @@
     <div class="bg-white rounded-lg p-4 max-w-4xl overflow-hidden my-auto">
       <button type="button" class="text-2xl text-color-nav top-0 right-0" on:click={closeDialogDonar}><i class="fa-regular fa-circle-xmark"></i></button>
       <div class="dialog-body overflow-y-auto h-full p-4">
-        <h1 class="text-color-nav font-bold text-3xl max-w-xs p-4">Asiste A Eventos En<span class="text-color-button " >  Vivo</span> </h1>
-
+        <h1 class="text-color-nav font-bold text-3xl max-w-xs p-4">Asiste A Eventos En<span class="text-color-button ml-2" >  Vivo</span> </h1>
+        <span class="text-xs uppercase text-color-second">¡Aún no hay eventos de Live!</span>
       </div>
     
     </div>

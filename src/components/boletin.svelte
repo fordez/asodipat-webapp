@@ -2,6 +2,7 @@
   import { addDoc, collection, getDocs, query, where } from 'firebase/firestore';
   import { db } from '../firebase';
   import { enviarCorreo } from '../funtiones/sendemail';
+  let show = false;
 
   let respuesta = '';
   let color = '';
@@ -106,7 +107,7 @@
     </div>
 
     <div class="{color} text-sm mb-2 text-center">
-      <p>{respuesta}</p>
+      <p >{respuesta}</p>
     </div>
 
     <div class="text-center md:text-left">
